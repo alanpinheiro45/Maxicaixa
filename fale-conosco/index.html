@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +43,41 @@
                 font-size: 1rem;
                 margin-right: 1rem;
             }
+            .centralizado{
+                max-width: 90%;
+                margin: 0 auto;
+                /* position: relative; */
+            }
+            header{
+                height: 5.75rem;
+                /* background-color: rgb(211, 43, 43); */
+                padding: 1rem 0;
+                position: relative;
+            }
+            header img{
+                position: absolute;
+                top: 50%;
+                transform:translateY(-50%);
+            }
+            nav{
+                position: absolute;
+                top:50%;
+                right: 6%;
+            }
+            ul{
+                text-decoration: none;
+                list-style: none;
+                transform:translateY(-50%);
+            }
+            ul li{
+                display: inline-block;
+                padding: 1.25rem;
+                border-right: 1px solid rgba(0, 0, 0, .05);
+                font-family: "Roboto Slab";
+            }
+            ul li i{
+                font-size: 1.25rem;
+            }
         </style> 
 </head>
 <body>
@@ -53,6 +89,24 @@
             </div>
         </div>
     </div>
+    <header>
+        <div class="centralizado">
+            <img src="../img/logo-maxicaixa.jpg">
+
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Sobre nós</li>
+                    <li>Produtos</li>
+                    <li>Segmentos</li> 
+                    <li>Blog</li> 
+                    <li>Fale Conosco</li> 
+                    <li>Catálogo Digital</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>        
+                </ul>
+            </nav>
+        </div> 
+    </header>
     <script src="https://kit.fontawesome.com/84e3143f1c.js" crossorigin="anonymous"></script>   
 </body>
 </html>
