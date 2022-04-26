@@ -1,84 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link href="../css/estilo.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco • Maxicaixa</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Lato;
-            }
-            .bemVindo{
-                background-color: #2C2C2C;
-                font-size: 0.8125rem;
-                color:aliceblue;
-                height: 2.8125rem;
-            }
-            .bemVindo > div{
-                position: relative;
-                max-width: 90%;
-                margin: 0 auto;
-                padding-top: 1em;
-            }
-            .bemVindo > div > span{
-                margin-right: 1rem;
-                transform:translateY(-0.5em);
-            }
-            .bemVindo i{
-                font-size: 0.75rem;
-                margin-right: 0.4rem;
-            }
-            .bemVindo .redesSociais span{
-                position: absolute;
-                right: 0;
-                top:50%;
-                /*transform:translateY(0.5em);*/
-            }
-            .redesSociais i{
-                font-size: 1rem;
-                margin-right: 1rem;
-            }
-            .centralizado{
-                max-width: 90%;
-                margin: 0 auto;
-                /* position: relative; */
-            }
-            header{
-                height: 5.75rem;
-                /* background-color: rgb(211, 43, 43); */
-                padding: 1rem 0;
-                position: relative;
-            }
-            header img{
-                position: absolute;
-                top: 50%;
-                transform:translateY(-50%);
-            }
-            nav{
-                position: absolute;
-                top:50%;
-                right: 6%;
-            }
-            ul{
-                text-decoration: none;
-                list-style: none;
-                transform:translateY(-50%);
-            }
-            ul li{
-                display: inline-block;
-                padding: 1.25rem;
-                border-right: 1px solid rgba(0, 0, 0, .05);
-                font-family: "Roboto Slab";
-            }
-            ul li i{
-                font-size: 1.25rem;
-            }
-        </style> 
 </head>
 <body>
     <div class="bemVindo"  >
@@ -107,6 +34,39 @@
             </nav>
         </div> 
     </header>
+    <div class="contato">
+        <h1>Contato</h1>
+        <p>Ficou com alguma dúvida, ou quer solicitar um orçamento?</p>
+        <p>Entre em contato com a Maxicaixa. Nossa equipe está sempre pronta para te atender.</p>
+    </div>
+
+    <div class="centralizado">
+        <div class="esquerda">
+            <div class="infoContato">
+                <h3>Contatos</h3>
+                <ul>
+                    <li><span class="um"><i class="fa-solid fa-location-dot"></i></span><span class="dois">Av. Stanley, 1900 – Rod. Limeira/Piracicaba SP 147 Km 120 - Limeira/SP - CEP: 13482-860</span></li>
+                    <li><span><i class="fa-solid fa-phone-flip"></i></span><span>(11) 4280.1721<span></span></li>
+                    <li><span><i class="fa-regular fa-envelope"></i></span><span>contato@maxicaixa.com.br</span></li>
+                </ul>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29469.01056951704!2d-47.45042892267076!3d-22.59307525100835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c62a58f5d38a67%3A0x7c470f437ba77fd0!2sMaxicaixa%20-%20Ind%C3%BAstria%20e%20Com%C3%A9rcio%20de%20Produtos%20Pl%C3%A1sticos.!5e0!3m2!1spt-BR!2sbr!4v1638399536595!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div><div class="direita">
+            <form>
+                <input type="text" placeholder="Digite seu nome">
+                <input type="text" placeholder="Empresa">
+                <input type="text" placeholder="Cidade">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Telefone">
+                <textarea placeholder="Mensagem" rows="10"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/84e3143f1c.js" crossorigin="anonymous"></script>   
 </body>
 </html>

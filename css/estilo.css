@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Lato; */
+}
+.bemVindo{
+    background-color: #2C2C2C;
+    font-size: 1rem;
+    color:aliceblue;
+    height: 2.8125rem;
+}
+.bemVindo > div{
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 1em;
+    font-family: Lato;
+}
+.bemVindo > div > span{
+    margin-right: 1rem;
+    transform:translateY(-0.5em);
+}
+.bemVindo i{
+    font-size: 0.75rem;
+    margin-right: 0.4rem;
+}
+.bemVindo .redesSociais span{
+    position: absolute;
+    right: 0;
+    top:50%;
+}
+.redesSociais i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.centralizado{
+    max-width: 90%;
+    margin: 0 auto;
+}
+header{
+    height: 5.75rem;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: .95;
+}
+header img{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+}
+nav{
+    position: absolute;
+    top:50%;
+    right: 6%;
+}
+nav ul{
+    text-decoration: none;
+    list-style: none;
+    transform:translateY(-50%);
+}
+nav ul li{
+    display: inline-block;
+    padding: 1.25rem;
+    border-right: 1px solid rgba(0, 0, 0, .05);
+    font-family: Roboto Slab;
+    font-weight: 1000;
+}
+nav ul li i{
+    font-size: 1.25rem;
+}
+.contato{
+    text-align: center;
+    background-image: url(../img/contato-maxicaixa-banner.jpg);
+    height: 15.3rem;
+    color:aliceblue;
+    background-position: bottom;
+    padding-top: 4rem;
+    font-family: Roboto Slab;
+    margin-bottom: 3.75rem;
+}
+.contato h1{
+    font-size: 3.4375rem;
+    font-weight: 900;
+}
+.contato p{
+    font-size: 1.25rem;
+    font-weight: 900;
+    font-family: Roboto Slab;
+}
+.esquerda{
+    width: 33%;
+    margin-bottom: 500px;
+}
+.direita{
+    width: 67%;
+    float: right;
+    padding-left: 2rem;
+}
+.direita input , textarea{
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #666;
+    margin-bottom: 1rem;
+    outline: none;
+    font-family: Lato;
+}
+.esquerda , .direita{
+    display: inline-block;
+
+}
+.infoContato{
+    padding: 1.5625rem;
+    background-color: #666;
+    color: aliceblue;
+    margin-bottom: 1.75rem;
+}
+.infoContato h3{
+    font-family: Roboto Slab;
+    font-size: 1.5625rem;
+    font-weight: 900;
+}
+.infoContato ul{
+    list-style: none;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: Lato;
+}
+.infoContato li{
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
+.infoContato i{
+    padding-right: 1em;
+    color: #2C2C2C;
+}
+.infoContato ul span{
+    display: inline-block;
+}
+.um{
+    width: 10%;
+    transform: translateY(-50%);
+}
+.dois{
+    width: 90%;
+}
+.direita input[type="submit"]{
+    background-color: #2991D6;
+    color: aliceblue;
+    width: max-content;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 20px;
+}
