@@ -4,6 +4,9 @@
     box-sizing: border-box;
     /* font-family: Lato; */
 }
+img{
+    max-width: 100%;
+}
 .bemVindo{
     background-color: #2C2C2C;
     font-size: 1rem;
@@ -37,6 +40,9 @@
 .centralizado{
     max-width: 90%;
     margin: 0 auto;
+}
+.topo{
+    margin-bottom: 50px;
 }
 header{
     height: 5.75rem;
@@ -75,7 +81,7 @@ nav ul li i{
     text-align: center;
     background-image: url(../img/contato-maxicaixa-banner.jpg);
     height: 15.3rem;
-    color:aliceblue;
+    color: white;
     background-position: bottom;
     padding-top: 4rem;
     font-family: Roboto Slab;
@@ -92,7 +98,7 @@ nav ul li i{
 }
 .esquerda{
     width: 33%;
-    margin-bottom: 500px;
+    margin-bottom: 80px;
 }
 .direita{
     width: 67%;
@@ -140,11 +146,11 @@ nav ul li i{
     display: inline-block;
 }
 .um{
-    width: 10%;
+    width: 5%;
     transform: translateY(-50%);
 }
 .dois{
-    width: 90%;
+    width: 95%;
 }
 .direita input[type="submit"]{
     background-color: #2991D6;
@@ -153,4 +159,71 @@ nav ul li i{
     border: none;
     border-radius: 5px;
     padding: 11px 20px;
+}
+.blog{
+    padding-top: 60px;
+    text-align: center;
+    font-family: Roboto Slab;
+    margin-bottom: 3.75rem;
+    background-color: aliceblue;
+}
+.blogItem{
+    display:inline-block;
+    width:22%;
+    margin:0 1%;
+    vertical-align:top;
+    padding: 1.25rem;
+}
+.blog h2{
+    font-size: 3.4375rem;
+    font-weight: 900;
+    color: #2C2C2C;
+}
+.blog p{
+    color: #989898;
+    font-weight: 1000;
+}
+.blog h3{
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 1.875rem;
+    color: #414141;
+    font-weight: 1000;    
+}
+.blog p{
+    font-size: 0.8125rem;
+    font-family: Lato;
+    color: #626262;
+    margin-bottom: 50px;
+}
+.blogImage img{
+    max-width:225px;
+    /* max-height:150px;
+    width: auto;
+    height: auto; */
+    margin-bottom: 0.5rem;
+}
+.blogItem span{
+    font-family: Lato;
+    font-size: 0.8125rem;
+    color: #a8a8a8;
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+}
+.blogInfo{
+    padding: 1.25rem;
+    background-color: white;
+}
+.blogFotter{
+    color: blue;
+    font-weight: 1000;
+}
+.blogFotter i{
+    color:#414141;
+}
+.blogHiperlinks{
+    width: 50%;
+    float: right;
+    border-left: 1px solid #7e7373;
+    padding-left: 2px;
 }
