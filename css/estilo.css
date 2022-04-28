@@ -227,3 +227,15 @@ nav ul li i{
     border-left: 1px solid #7e7373;
     padding-left: 2px;
 }
+.textoMissao{
+    background-color: #414141;
+    color: white;
+}
+.colMissao{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    color:#CCCCCC;
+    font-size: 14.5px;
+    font-weight: 600;
+}
