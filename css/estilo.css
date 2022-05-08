@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: Lato; */
 }
 img{
     max-width: 100%;
@@ -17,18 +16,22 @@ img{
     position: relative;
     max-width: 90%;
     margin: 0 auto;
-    padding-top: 1em;
+    padding-top: 0.5em;
     font-family: Lato;
 }
 .bemVindo > div > span{
     margin-right: 1rem;
     transform:translateY(-0.5em);
+    font-size: 13px;
 }
 .bemVindo i{
     font-size: 0.75rem;
     margin-right: 0.4rem;
 }
-.bemVindo .redesSociais span{
+.redesSociais{
+    padding: 0 0 0 2rem;
+}
+.redesSociais span{
     position: absolute;
     right: 0;
     top:50%;
@@ -38,7 +41,7 @@ img{
     margin-right: 1rem;
 }
 .centralizado{
-    max-width: 90%;
+    max-width: 60%;
     margin: 0 auto;
 }
 .topo{
@@ -51,16 +54,44 @@ header{
     top: 0;
     background-color: rgb(255, 255, 255);
     opacity: .95;
+    z-index: 100;
 }
 header img{
     position: absolute;
     top: 50%;
     transform:translateY(-50%);
+    max-width: 220px;
 }
 nav{
     position: absolute;
     top:50%;
     right: 6%;
+}
+nav > ul > li{
+    position: relative;
+}
+nav ul li ul li{
+    padding: 10px 10px 10px 20px !important;
+    font-size: 13px;
+    width: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+nav ul li ul li , nav ul li ul{
+    padding: 0;
+}
+nav ul ul{
+    position: absolute;
+    display: none;
+    top: 4rem;
+    left: 0;
+    transform: none !important;
+    background-color: aliceblue;
+}
+nav > ul > li:hover > ul{
+    display: block;
+}
+nav > ul > li > ul > li:hover{
+    background-color: #989898;
 }
 nav ul{
     text-decoration: none;
@@ -69,13 +100,23 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    padding: 1.25rem;
     border-right: 1px solid rgba(0, 0, 0, .05);
     font-family: Roboto Slab;
-    font-weight: 1000;
+    padding: 1.25rem;
+    font-weight: 400;
+    cursor: pointer;
 }
 nav ul li i{
     font-size: 1.25rem;
+}
+nav ul li a{
+    padding: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+
+}
+nav ul li a:hover{
+    color: ine;
 }
 .contato{
     text-align: center;
@@ -89,11 +130,11 @@ nav ul li i{
 }
 .contato h1{
     font-size: 3.4375rem;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 .contato p{
     font-size: 1.25rem;
-    font-weight: 900;
+    /* font-weight: 900; */
     font-family: Roboto Slab;
 }
 .esquerda{
@@ -115,28 +156,29 @@ nav ul li i{
 }
 .esquerda , .direita{
     display: inline-block;
-
 }
 .infoContato{
-    padding: 1.5625rem;
+    /* padding: 1.5625rem; */
     background-color: #666;
     color: aliceblue;
     margin-bottom: 1.75rem;
 }
-.infoContato h3{
+h3{
     font-family: Roboto Slab;
     font-size: 1.5625rem;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 .infoContato ul{
-    list-style: none;
     font-size: 0.8125rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-family: Lato;
+    padding-left: 0;
 }
 .infoContato li{
     padding: 1rem 0;
     padding-left: 1rem;
+    list-style-image: none !important;
+    list-style: none !important;
 }
 .infoContato i{
     padding-right: 1em;
@@ -144,6 +186,9 @@ nav ul li i{
 }
 .infoContato ul span{
     display: inline-block;
+}
+.infoContato h3{
+    padding: 10px 0px 0px 27.5px;
 }
 .um{
     width: 5%;
@@ -176,19 +221,16 @@ nav ul li i{
 }
 .blog h2{
     font-size: 3.4375rem;
-    font-weight: 900;
-    color: #2C2C2C;
+    color: #414141;
 }
 .blog p{
     color: #989898;
-    font-weight: 1000;
 }
 .blog h3{
     text-align: center;
     font-family: Roboto Slab;
     font-size: 1.875rem;
     color: #414141;
-    font-weight: 1000;    
 }
 .blog p{
     font-size: 0.8125rem;
@@ -198,16 +240,12 @@ nav ul li i{
 }
 .blogImage img{
     max-width:225px;
-    /* max-height:150px;
-    width: auto;
-    height: auto; */
     margin-bottom: 0.5rem;
 }
 .blogItem span{
     font-family: Lato;
     font-size: 0.8125rem;
     color: #a8a8a8;
-    font-weight: 1000;
     margin-bottom: 0.5rem;
 }
 .blogInfo{
@@ -216,7 +254,6 @@ nav ul li i{
 }
 .blogFotter{
     color: blue;
-    font-weight: 1000;
 }
 .blogFotter i{
     color:#414141;
@@ -233,9 +270,280 @@ nav ul li i{
 }
 .colMissao{
     text-align: center;
-    margin: 30px;
     padding: 30px;
     color:#CCCCCC;
     font-size: 14.5px;
-    font-weight: 600;
+}
+.widgets{
+    background-color: #626262;
+    padding: 10px 0 20px 0;
+}
+.widgets img{
+    width: 230px;
+    margin: 0 auto;
+}
+.widgets p{
+    color: #CCCCCC;
+    font-size: 13px;
+    font-family: Lato;
+    text-align: left;
+}
+.descricaoMaxi li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 5px;
+    padding: 10px 15px 10px 15px;
+    background-color: white; 
+    color: #626262 !important;
+}
+h4{
+    color: #CCCCCC;
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+.uArtigos{
+    background-color: #414141 !important;
+    position: relative;
+    height: 63.28px;
+    margin-top: 5px;
+}
+.ultimosArtigos span{
+    color: #CCCCCC;
+    font-size: 12px;
+}
+.ultimosArtigos p{
+    font-size: 10px;
+    border-bottom: 1px solid #2C2C2C;
+    margin-bottom: 1px;
+}
+.uaDireita{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.uaEsquerda{
+    padding: 5px 15px;
+    margin-right: 80px;
+}
+.uaDireita img{
+    width: 80px;
+}
+.widgets li{
+    color: #CCCCCC;
+    list-style-image: url('../img/list_check.png');
+}
+.verCatalogo p{
+    text-align: center;
+    color: blue; 
+}
+.footer{
+    background-color: #414141 !important;
+    color:#CCCCCC;
+    font-size: 13px;
+    font-family: Lato;
+    position: absolute;
+    width: 100%;
+}
+.textoFooter{
+    position: relative;
+    float: left;
+}
+.listaFooter{
+    position: relative;
+    float: right;
+}
+.footer li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    color: #CCCCCC;
+    font-size: 16px;
+}
+.sobreNos{
+    text-align: center;
+    text-align: center;
+    background-image: url(../img/fundo-maxicaixa2\ \(1\).jpg);
+    height: 15.3rem;
+    color: white;
+    background-position: bottom;
+    padding-top: 4rem;
+    font-family: Roboto Slab;
+    margin-bottom: 3.75rem;
+}
+.sobreNos h1{
+    font-size: 55px;
+}
+.sobreNos p{
+    font-size: 20px;
+    font-family: Roboto Slab;
+}
+.sobreEsquerda h2{
+    font-family: Roboto Slab;
+    font-size: 30px;
+    color: #414141;
+}
+.sobreEsquerda h5{
+    font-family: Roboto Slab;
+    font-size: 15px;
+    color: #989898;
+}
+.sobreEsquerda ul{
+    font-family: Lato;
+    font-size: 13px;
+    color: #626262;
+}
+.sobreDireita{
+    font-family: Lato;
+    font-size: 13px;
+    color: #626262;
+}
+.sustentabilidade{
+    padding: 50px 0 50px 0;
+    background-color: #eaeaea;
+
+}
+.imgSustentabilidade{
+    width: 100px;
+}
+.fConosco{
+    text-align: center;
+    color: #2C2C2C;
+    padding-top: 4rem;
+    font-family: Roboto Slab;
+    margin-bottom: 3.75rem;
+}
+.fConosco p{
+    font-size: 1.25rem;
+    font-weight: 100;
+    font-family: Roboto Slab;
+    color: #989898;
+}
+.fConosco h1{
+    font-size: 35px !important;
+    font-family: Roboto Slab;
+    color: #414141 !important;
+}
+.txtSobre{
+    text-align: center;
+}
+.txtSobre h2{
+    font-size: 30px;
+    font-family: Roboto Slab;
+    display: inline;
+}
+.txtSobre span{
+    color: #008000;
+    font-weight:1000;
+    font-size: 30px;
+    font-family: Roboto Slab;
+}
+.txtSobre p{
+    font-size: 13px;
+    font-family: Lato;
+    color: #626262;
+}
+.informacoes{
+    background-color: aliceblue;
+    padding: 60px 0;
+}
+.infoHome h1{
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 35px;
+    color: #414141;
+}
+.infoHome h5{
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 15px;
+    color: #989898;
+}
+.iconsHome{
+    text-align: center;
+}
+.barraTarefas img {
+    margin: auto 5%;
+}
+.iconsHome p{
+    font-family: Roboto Slab;
+    font-size: 20px;
+    color: #414141;
+    font-weight: 100;
+}
+.infoProdutos{
+    background-color: aliceblue;
+}
+.txtProdutos{
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    color: #414141;
+    padding: 15px 20px;
+    background-color: white;
+}
+.imgProdutos{
+    padding: 10px;
+}
+.infoProdutos button , .listagemProdutos button{
+    padding: 0.5rem 1rem;
+    background-color: #0066b4;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 5px auto;
+}
+.infoProdutos button:hover , .listagemProdutos button:hover{
+    background-color: #044A80;
+}
+.infoProdutos h1{
+    font-family: Roboto Slab;
+    font-size: 55px;
+    color: #414141;
+    text-align: center;
+    font-weight: 300;
+}
+.pdProdutos{
+    padding: 50px;
+}
+.infoLProdutos img{
+    width: 50%;
+    display: inline-block;
+}
+.infoLProdutos p{
+    width: 46%;
+    display: inline-block;
+    text-align: left !important;
+}
+.lProdutos h1 , .listagemProdutos h1{
+    font-family: Roboto Slab;
+    font-size: 35px;
+    color: #414141;
+    text-align: center;
+}
+.lProdutos p , .listagemProdutos p{
+    font-family: Roboto Slab;
+    font-size: 20px;
+    color: #989898;
+    text-align: center;
+}
+.lProdutos , .listagemProdutos{
+    padding: 40px;
+}
+.iconsHome .col{
+    border-right: 1px solid #989898;
+}
+.linkpagina{
+    color: #7e7373 !important;
+    margin-left:10px;
+}
+.linkpagina:hover{
+    background-color: #0066b4 !important;
+    color: white !important;
+}
+.npage{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
