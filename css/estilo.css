@@ -241,6 +241,7 @@ h3{
 .blogImage img{
     max-width:225px;
     margin-bottom: 0.5rem;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 .blogItem span{
     font-family: Lato;
@@ -484,6 +485,9 @@ h4{
 .imgProdutos{
     padding: 10px;
 }
+.infoProdutos1 a{
+    text-decoration: none !important;
+} 
 .infoProdutos button , .listagemProdutos button{
     padding: 0.5rem 1rem;
     background-color: #0066b4;
@@ -546,4 +550,62 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.bgproduto{
+    padding-top: 20px;
+    background-color: aliceblue;
+    font-family: Roboto Slab;
+    font-size: 35px;
+    color: #414141;
+}
+.bgproduto img{
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.subimagens{
+    padding: 15px;
+    width: 50%;
+}
+.descricaopd details{
+    font-size: 15px !important;
+}
+.tabeladescricao{
+    font-size: 15px !important;
+}
+.cd_produtos{
+    padding: 30px;
+}
+.cd_produtos h1{
+    font-family: Roboto Slab;
+    font-size: 35px;
+    color: #414141;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cd_produtos form{
+    font-size: 1.25rem;
+    font-weight: 100;
+    font-family: Roboto Slab;
+    color: #414141;
+}
+.cd_produtos input[type="submit"]{
+    background-color: #2991D6;
+    color: aliceblue;
+    width: max-content;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 20px;
+}
+.cd_produtos input{
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid #666;
+    margin-bottom: 1rem;
+    outline: none;
+    font-family: Lato;
+    display: inline-block;
+}
+.cd_produtos p{
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

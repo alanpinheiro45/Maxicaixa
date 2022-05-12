@@ -1,6 +1,6 @@
 <?php require_once("repetidores/head.php");?>
     </head><body>
-<?php require_once("repetidores/cabecalho.php");?>
+<?php //require_once("repetidores/cabecalho.php");?>
     
     <div>
         <img src="<?=$url?>/img/banner.png">

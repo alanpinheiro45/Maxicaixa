@@ -15,6 +15,7 @@ $n2= $qtd;
 try{
     $resultados=$PDO->query("SELECT * FROM produtos LIMIT $n1 , $n2 ",PDO::FETCH_ASSOC);
 
+
     if($resultados == false){
         echo("Erro ao consultar os dados");
         exit();
@@ -33,13 +34,15 @@ try{
         <div class="row infoProdutos1">
             <?php foreach($resultados as $item): ?>
                 <div class="col-4">
-                    <div class="imgProdutos">
-                        <img src="<?=$item["imagem"]?>">
-                    </div>
-                    <div class="txtProdutos">
+                    <a href="<?=$url?>/produto/index.php?id=<?=$item['id']?>">
+                        <div class="imgProdutos">
+                            <img src="<?=$item["img_perfil"]?>">
+                        </div>
+                        <div class="txtProdutos">
                         <p><?= $item["nome"] ?></p>
-                    </div>
-                    <button>Solicitar um Cotação</button>
+                        </div>
+                    </a>
+                        <button>Solicitar um Cotação</button>
                 </div>
                 <?php endforeach; ?>  
             </div>
