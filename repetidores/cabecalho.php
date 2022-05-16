@@ -1,7 +1,7 @@
 
 <?php 
- require_once("head.php");
- require_once($url."bd/conexao.php");
+ require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/head.php");
+ require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/bd/conexao.php");
 
 try{
     $rsegmentos=$PDO->query("SELECT * FROM segmentos",PDO::FETCH_ASSOC);

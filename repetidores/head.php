@@ -2,7 +2,7 @@
 <?php $url = "http://$_SERVER[SERVER_NAME]/Maxicaixa/";?>
 <?php
 //require_once("../url.php");
-require_once($url . "/bd/conexao.php"); 
+require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/bd/conexao.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

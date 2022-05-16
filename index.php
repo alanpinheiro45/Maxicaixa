@@ -1,9 +1,9 @@
 <?php $url = "http://$_SERVER[SERVER_NAME]/Maxicaixa/";?>
 <?php //require_once("url.php");?>
-<?php require_once($url ."repetidores/head.php");?>
-<?php require_once($url . "bd/conexao.php");?>
+<?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/head.php");?>
+<?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/bd/conexao.php");?>
     </head><body>
-<?php require_once($url . "repetidores/cabecalho.php");?>
+<?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/cabecalho.php");?>
     
     <div>
         <img src="<?=$url?>/img/banner.png">
