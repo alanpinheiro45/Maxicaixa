@@ -3,14 +3,15 @@
     //var_dump($_FILES , $_POST);
     
     $diretorio=date("Y-m-d-H-i-s").$_FILES['img_perfil']['name'];
-
+    $diretorio2=date("Y-m-d-H-i-s").$_FILES['img_descricao']['name'];
+    
     move_uploaded_file($_FILES['img_perfil']['tmp_name'],"../".$diretorio);
-    // move_uploaded_file($_FILES['img_perfil']['tmp_name'],"../".$diretorio);
+    move_uploaded_file($_FILES['img_descricao']['tmp_name'],"../".$diretorio2);
 
     try{
         $contador=$PDO->exec("INSERT INTO produtos VALUES (
         default,
-        '1',
+        '$_POST[select]',
         '$_POST[nome]',
         '$_POST[peso]',
         '$_POST[capacidade_volume]',
@@ -20,20 +21,16 @@
         '{$url}{$diretorio}',
         '$_POST[carga_dinamica]',
         '$_POST[carga_estatica]',
-        'descricao'
+        '{$url}{$diretorio2}'
         )");
 
     }catch(Exception $e){
         echo("Erro na consulta".$e->getMessage());
     }
-    var_dump($contador);
 
     if($contador>0){
-        echo("Dados inseridos com sucesso");
+        require_once("../produto/salvoproduto.php");
     }else{
         echo("Erro ao inserir dados");
     }
-
-    
-
 ?>

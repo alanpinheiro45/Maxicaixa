@@ -25,17 +25,16 @@ try{
 
 
                 <div class="col-4">
+                    <a href="<?=$url?>/produto/index.php?id=<?=$item['id']?>">
                     <div class="imgProdutos">
-                        <img src="<?=$item["imagem"]?>">
+                        <img src="<?=$item["img_perfil"]?>">
                     </div>
                     <div class="txtProdutos">
                         <p><?= $item["nome"] ?></p>
-                    </div>
+                    </div></a>
                     <button>Solicitar um Cotação</button>
-                </div> 
+                </div>
 
-                
-                
                 <?php endforeach; ?>
             </div>
         </div>

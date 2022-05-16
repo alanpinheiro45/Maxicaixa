@@ -42,13 +42,27 @@ catch(Exception $e){
                 <div class="descricaopd">
                     <div class="tabeladescricao">
                         <table class="table table-bordered">
-                                <tr>
-                                    <td>Peso</td>
-                                <td>Tamanho</td>
+                            <tr>
+                                <th>Peso</th>
+                                <th>Dimensões Externas</th>
+                                <th>Material</th>
+                                <th>Dimensões Internas</th>
                             </tr>
                             <tr>
                                 <td><?= $produto["peso"] ?></td> 
                                 <td><?= $produto["dimensoes_externas"] ?></td> 
+                                <td><?= $produto["material"] ?></td> 
+                                <td><?= $produto["dimensoes_internas"] ?></td> 
+                            </tr>    
+                            <tr>
+                                <th>Capacidade / Volume</th>
+                                <th>Carga Dinâmica</th>
+                                <th>Carga Estática</th>
+                            </tr>
+                            <tr>
+                                <td><?= $produto["capacidade_volume"] ?></td> 
+                                <td><?= $produto["carga_dinamica"] ?></td> 
+                                <td><?= $produto["carga_estatica"] ?></td> 
                             </tr>    
                         </table>
                     </div>

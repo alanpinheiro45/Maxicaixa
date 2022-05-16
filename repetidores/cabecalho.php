@@ -1,7 +1,7 @@
 
 <?php 
  require_once("head.php");
- require_once("../bd/conexao.php");
+ require_once($url."bd/conexao.php");
 
 try{
     $rsegmentos=$PDO->query("SELECT * FROM segmentos",PDO::FETCH_ASSOC);
@@ -14,8 +14,6 @@ try{
 
     $rsegmentos=$rsegmentos->fetchAll();
     $lprodutos=$lprodutos->fetchAll();
-    // var_dump($rsegmentos);
-    // var_dump($lprodutos);
 
 }catch(Exception $e){
     echo("Erro ao consultar os dados".$e->getMessage());
@@ -29,7 +27,7 @@ try{
     <div class="centralizado cabeca">
         <span>Bem-vindo ao site Maxicaixa</span><span><i class="fa-solid fa-phone-flip"></i>(11) 4280.1721</span><span><i class="fa-regular fa-envelope"></i>contato@maxicaixa.com.br</span>
         <div class="redesSociais">
-            <span><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-instagram"></i></span>
+            <span><a href="https://www.facebook.com/maxicaixa" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
         </div>
     </div>
 </div>

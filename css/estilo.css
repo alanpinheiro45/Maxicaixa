@@ -609,3 +609,16 @@ h4{
     font-size: 1.5rem;
     font-weight: bold;
 }
+.pdsalvo{
+    text-align: center;
+    font-family: Roboto Slab;
+    color: #414141;
+    background-color: aliceblue;
+    padding: 150px;
+}
+.pdsalvo h1{
+    font-size: 40px;
+}
+tr{
+    text-align: center;
+}

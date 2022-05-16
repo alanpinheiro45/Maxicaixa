@@ -10,9 +10,9 @@
                     <img src="<?=$url?>img/logo-footer-maxicaixa.png">
                     <p><br>Instalada na cidade de Limeira a MAXICAIXA produz e comercializa uma variada linha de produtos de material plástico injetado, direcionada à exposição, acondicionamento e transporte. Com larga experiência, a Maxicaixa traz para o mercado a sua linha de produtos de qualidade assegurada, com assessoria técnica na aquisição, atendimento rápido, pontualidade na entrega e preços competitivos.</p>
                     <ul>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <a href="https://www.facebook.com/maxicaixa" target="_blank"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+                        <a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                        <a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><li><i class="fa-brands fa-instagram"></i></li></a>
                     </ul>
                 </div>
                 <div class="col">
@@ -60,7 +60,7 @@
                         <li>Industrial</li>
                     </ul>
                     <div class="verCatalogo">
-                        <p>Ver Catálogo Maxicaixa>></p>
+                    <a href="<?=$url?>/upload/catalogo-pdf.pdf" target="_blank"><p>Ver Catálogo Maxicaixa>></p></a>
                     </div> 
                 </div>
             </div>
@@ -73,9 +73,9 @@
             </div>
             <div class="centralizado listaFooter">
                 <ul>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-linkedin-in"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <a href="https://www.facebook.com/maxicaixa" target="_blank"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+                    <a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                    <a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><li><i class="fa-brands fa-instagram"></i></li></a>
                 </ul>
             </div>
         </div>

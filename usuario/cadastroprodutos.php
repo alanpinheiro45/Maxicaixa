@@ -6,6 +6,20 @@ require_once("../repetidores/head.php");
 <div class="centralizado cd_produtos">
     <h1>Cadastro de Produtos</h1>
         <form enctype="multipart/form-data" action="<?=$url?>bd/salvarproduto.php" method="post">
+
+                            <p>Selecione a Linha do Produto</p>
+                        <select name="select">
+                            <option value="1" selected>Caixa Pallet GLT</option>
+                            <option value="2">Caixas Vazadas</option>
+                            <option value="3">Cestos</option>
+                            <option value="4">Contentor Plástico 40</option>
+                            <option value="5">Estratos</option>
+                            <option value="6">Gaveteiros BIN</option>
+                            <option value="7">Linha 1000</option>
+                            <option value="8">Linha RKLT</option>
+                            <option value="9">Linha Flex ALC</option>
+                            <option value="10">Pallets</option>
+                        </select>
                             <p>Nome do Produto</p>
                         <input name="nome" type="text" placeholder="Digite o nome do produto">
                             <p>Peso do Produto</p>

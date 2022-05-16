@@ -25,7 +25,7 @@ try{
 
                 <div class="col-4">
                     <div class="imgProdutos">
-                        <img src="<?=$item["imagem"]?>">
+                        <img src="<?=$item["img_perfil"]?>">
                     </div>
                     <div class="txtProdutos">
                         <p><?= $item["nome"] ?></p>

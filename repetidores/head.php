@@ -1,5 +1,8 @@
-<?php $url = "http://$_SERVER[SERVER_NAME]/Maxicaixa/";
-require_once("../bd/conexao.php");
+<?php //$url = "http://$_SERVER[DOCUMENT_ROOT]/Maxicaixa/";?>
+<?php $url = "http://$_SERVER[SERVER_NAME]/Maxicaixa/";?>
+<?php
+//require_once("../url.php");
+require_once($url . "/bd/conexao.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

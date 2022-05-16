@@ -34,6 +34,7 @@ try{
         <div class="row infoProdutos1">
             <?php foreach($resultados as $item): ?>
                 <div class="col-4">
+
                     <a href="<?=$url?>/produto/index.php?id=<?=$item['id']?>">
                         <div class="imgProdutos">
                             <img src="<?=$item["img_perfil"]?>">
@@ -42,6 +43,7 @@ try{
                         <p><?= $item["nome"] ?></p>
                         </div>
                     </a>
+
                         <button>Solicitar um Cotação</button>
                 </div>
                 <?php endforeach; ?>  
