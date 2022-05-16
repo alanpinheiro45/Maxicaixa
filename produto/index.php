@@ -42,27 +42,56 @@ catch(Exception $e){
                 <div class="descricaopd">
                     <div class="tabeladescricao">
                         <table class="table table-bordered">
+                            
                             <tr>
-                                <th>Peso</th>
-                                <th>Dimensões Externas</th>
-                                <th>Material</th>
-                                <th>Dimensões Internas</th>
+                                <?php if(!empty($produto["peso"])): ?>
+                                    <th>Peso</th>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["dimensoes_externas"])): ?>
+                                    <th>Dimensões Externas</th>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["material"])): ?>
+                                    <th>Material</th>
+                                <?php endif; ?>    
+                                <?php if(!empty($produto["dimensoes_internas"])): ?>
+                                    <th>Dimensões Internas</th>
+                                <?php endif; ?>    
                             </tr>
                             <tr>
-                                <td><?= $produto["peso"] ?></td> 
-                                <td><?= $produto["dimensoes_externas"] ?></td> 
-                                <td><?= $produto["material"] ?></td> 
-                                <td><?= $produto["dimensoes_internas"] ?></td> 
+                                <?php if(!empty($produto["peso"])): ?>
+                                    <td><?= $produto["peso"] ?></td>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["dimensoes_externas"])): ?>
+                                    <td><?= $produto["dimensoes_externas"] ?></td> 
+                                <?php endif; ?>
+                                <?php if(!empty($produto["material"])): ?>
+                                    <td><?= $produto["material"] ?></td>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["dimensoes_internas"])): ?>
+                                    <td><?= $produto["dimensoes_internas"] ?></td>
+                                <?php endif; ?>     
                             </tr>    
                             <tr>
-                                <th>Capacidade / Volume</th>
-                                <th>Carga Dinâmica</th>
-                                <th>Carga Estática</th>
+                                <?php if(!empty($produto["capacidade_volume"])): ?>
+                                    <th>Capacidade / Volume</th>
+                                <?php endif;?>
+                                <?php if(!empty($produto["carga_dinamica"])): ?>
+                                    <th>Carga Dinâmica</th>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["carga_estatica"])): ?>
+                                    <th>Carga Estática</th>
+                                <?php endif; ?>
                             </tr>
                             <tr>
-                                <td><?= $produto["capacidade_volume"] ?></td> 
-                                <td><?= $produto["carga_dinamica"] ?></td> 
-                                <td><?= $produto["carga_estatica"] ?></td> 
+                                <?php if(!empty($produto["capacidade_volume"])): ?>
+                                    <td><?= $produto["capacidade_volume"] ?></td>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["carga_dinamica"])): ?>
+                                    <td><?= $produto["carga_dinamica"] ?></td>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["carga_estatica"])): ?>
+                                    <td><?= $produto["carga_estatica"] ?></td>
+                                <?php endif; ?> 
                             </tr>    
                         </table>
                     </div>

@@ -4,7 +4,7 @@ require_once("../repetidores/cabecalho.php");
 require_once("../bd/conexao.php");
 
 try{
-    $resultados=$PDO->query("SELECT * FROM produtos , categoria_produto WHERE produtos.id_categoria = categoria_produto.id AND categoria_produto.id = $_GET[id]",PDO::FETCH_ASSOC);
+    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos , categoria_produto WHERE produtos.id_categoria = categoria_produto.id AND categoria_produto.id = $_GET[id]",PDO::FETCH_ASSOC);
 
     if($resultados == false){
         echo("Erro ao consultar os dados");
@@ -12,7 +12,7 @@ try{
     }
 
     $resultados=$resultados->fetchAll();
-    // var_dump($resultados);
+
 }catch(Exception $e){
     echo("Erro ao consultar os dados".$e->getMessage());
 }
