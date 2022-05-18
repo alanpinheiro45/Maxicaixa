@@ -1,6 +1,18 @@
+<title>Login • Maxicaixa</title>
 <?php
 require_once("../repetidores/head.php");
+if(isset($_SESSION["logado"])){
+
+    if($_SESSION["logado"] == true){
+        header("Location: menu.php");
+    }
+    
+}
 require_once("../repetidores/cabecalho.php");
+
+//var_dump($_SESSION);
+//var_dump(session_id());
+
 ?>
 
 <div class="centralizado login">

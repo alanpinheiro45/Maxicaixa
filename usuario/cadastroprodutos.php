@@ -1,3 +1,4 @@
+<title>Cadastro De Produtos • Maxicaixa</title>
 <?php
 require_once("../repetidores/cabecalho.php");
 require_once("../repetidores/head.php");
@@ -6,6 +7,15 @@ require_once("../repetidores/head.php");
 <div class="centralizado cd_produtos">
     <h1>Cadastro de Produtos</h1>
         <form enctype="multipart/form-data" action="<?=$url?>bd/salvarproduto.php" method="post">
+
+                            <p>Selecione o Segmento do Produto</p>
+                            
+                        <label><input type="checkbox" name="segmentos[0]" value="1">Agronegócio</label> 
+                        <label><input type="checkbox" name="segmentos[1]" value="2">Automotiva</label> 
+                        <label><input type="checkbox" name="segmentos[2]" value="3">Avícula</label> 
+                        <label><input type="checkbox" name="segmentos[3]" value="4">Farmacêutica</label> 
+                        <label><input type="checkbox" name="segmentos[4]" value="5">Industrial</label> 
+                            
 
                             <p>Selecione a Linha do Produto</p>
                         <select name="select">

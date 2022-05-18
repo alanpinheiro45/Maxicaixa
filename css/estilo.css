@@ -639,3 +639,31 @@ tr{
     color: #414141;
     font-size:16px;
 }
+.cd_produtos [type="checkbox"]{
+    width: 20px !important;
+}
+.cd_produtos label{
+    display: block !important;
+}
+.blog{
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+.blogtitle h1{
+    font-family: Roboto Slab !important;
+    color: #414141;
+    font: size 30px;
+    text-align: center;
+}
+.resumopost{
+    margin-top: 50px;
+    font-family: Roboto Slab;
+    font-size: 16px;
+}
+.resumopost p{
+    font-weight: bold;
+    margin: 0 !important;
+}
+.res{
+    margin-bottom: 10px;
+}

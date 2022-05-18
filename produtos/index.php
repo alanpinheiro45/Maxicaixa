@@ -1,3 +1,4 @@
+<title>Produtos • Maxicaixa</title>
 <?php
 require_once("../repetidores/head.php");
 require_once("../repetidores/cabecalho.php");
@@ -35,7 +36,7 @@ try{
             <?php foreach($resultados as $item): ?>
                 <div class="col-4">
 
-                    <a href="<?=$url?>/produto/index.php?id=<?=$item['id']?>">
+                    <a href="<?=$url?>produto/index.php?id=<?=$item['id']?>">
                         <div class="imgProdutos">
                             <img src="<?=$item["img_perfil"]?>">
                         </div>

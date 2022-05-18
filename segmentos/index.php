@@ -1,11 +1,11 @@
-<title>Categorias • Maxicaixa</title>
+<title>Segmentos • Maxicaixa</title>
 <?php
 require_once("../repetidores/head.php");
 require_once("../repetidores/cabecalho.php");
 require_once("../bd/conexao.php");
 
 try{
-    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos , categoria_produto WHERE produtos.id_categoria = categoria_produto.id AND categoria_produto.id = $_GET[id]",PDO::FETCH_ASSOC);
+    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos, rl_produto_segmentos WHERE produtos.id = rl_produto_segmentos.idProduto AND rl_produto_segmentos.idSegmentos = $_GET[id]",PDO::FETCH_ASSOC);
 
     if($resultados == false){
         echo("Erro ao consultar os dados");

@@ -19,27 +19,25 @@ try{
     echo("Erro ao consultar os dados".$e->getMessage());
 }
 
-
-
 ?>
 
 <div class="bemVindo">
     <div class="centralizado cabeca">
         <span>Bem-vindo ao site Maxicaixa</span><span><i class="fa-solid fa-phone-flip"></i>(11) 4280.1721</span><span><i class="fa-regular fa-envelope"></i>contato@maxicaixa.com.br</span>
         <div class="redesSociais">
-            <span><a href="https://www.facebook.com/maxicaixa" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+            <span><a href="<?=$url?>usuario/login.php"><i class="fa-regular fa-circle-user"></i></a><a href="https://www.facebook.com/maxicaixa" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
         </div>
     </div>
 </div>
 <header>
     <div class="barraTarefas">
-        <a href="<?=$url?>/index.php"><img src="<?=$url?>/img/logo-footer-maxicaixa.png"></a>
+        <a href="<?=$url?>index.php"><img src="<?=$url?>img/logo-footer-maxicaixa.png"></a>
 
         <nav>
             <ul>
-                <li><a href="<?=$url?>/index.php">Home</a></li>
-                <li><a href="<?=$url?>/sobre-nos/index.php">Sobre nós</a></li>
-                <li> <a href="<?=$url?>/produtos/index.php"> Produtos</a>
+                <li><a href="<?=$url?>index.php">Home</a></li>
+                <li><a href="<?=$url?>sobre-nos/index.php">Sobre nós</a></li>
+                <li> <a href="<?=$url?>produtos/index.php"> Produtos</a>
                     <ul>
                         <?php foreach($lprodutos as $item): ?>
                         <li><a href="<?= $url. "categoria-produto/index.php?id=$item[id]" ?>">
@@ -50,17 +48,16 @@ try{
                 </li>
                 <li>Segmentos
                     <ul>
-                        <?php foreach($rsegmentos as $item): ?>
-                        <li>
-                            <?= $item["nome"] ?>
+                    <?php foreach($rsegmentos as $item): ?>
+                        <li><a href="<?= $url. "segmentos/index.php?id=$item[id]" ?>">
+                            <?= $item["nome"] ?> </a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
                 </li> 
-                <li>Blog</li> 
-                <li><a href="<?=$url?>/fale-conosco/index.php">Fale Conosco</a></li> 
-                <li><a href="<?=$url?>/upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>        
+                <li><a href="<?=$url?>blog/blog.php">Blog</a></li> 
+                <li><a href="<?=$url?>fale-conosco/index.php">Fale Conosco</a></li> 
+                <li><a href="<?=$url?>upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>       
             </ul>
         </nav>
     </div> 

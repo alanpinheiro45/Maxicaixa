@@ -1,10 +1,10 @@
-<?php $url = "http://$_SERVER[SERVER_NAME]/Maxicaixa/";?>
-<?php //require_once("url.php");?>
+<title>Home • Maxicaixa</title>
 <?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/head.php");?>
+<?php $url = "http://$_SERVER[SERVER_NAME]/Maxicaixa/";?>
+<?php //$_SESSION["cor"] = "verde";?>
 <?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/bd/conexao.php");?>
     </head><body>
 <?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/cabecalho.php");?>
-    
     <div>
         <img src="<?=$url?>/img/banner.png">
     </div>

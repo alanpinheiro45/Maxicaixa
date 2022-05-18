@@ -1,20 +1,27 @@
-<?php var_dump($_POST); ?>
-
 <?php
-    require_once("conexao.php");
-    
-    try{
-        $resultados=$PDO->query("SELECT * FROM usuario WHERE email = '$_POST[email]' AND senha = '$_POST[senha]'", PDO::FETCH_ASSOC);
+    session_start();
 
-        if($resultados == false){
-            echo("Erro ao consultar os dados");
+    $_SESSION["logado"] = true;
+    require_once("conexao.php");
+    try{
+        $resultLogin=$PDO->query("SELECT * FROM usuario WHERE email = '$_POST[email]' AND senha = '$_POST[senha]'", PDO::FETCH_ASSOC);
+        $testelogin = $resultLogin->fetch();
+        
+        if($resultLogin == false){
+            $_SESSION["logado"] = false;
             exit();
         }
-        var_dump($resultados->fetch());
+  
+        $_SESSION["logado"] = true;
+        $_SESSION["id"] = $testelogin["id"];
+        $_SESSION["nome"] = $testelogin["nome"];
+
+        if($_SESSION["logado"] == true){
+            header("Location: ../usuario/menu.php");
+        }else{
+            header("Location: ../usuario/login.php");}
 
     }catch(Exception $e){
-        echo("Erro na consulta".$e->getMessage());
+         echo("Erro na consulta".$e->getMessage());
     }
-    
-
 ?>
