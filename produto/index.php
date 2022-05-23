@@ -28,7 +28,9 @@ catch(Exception $e){
     <div class="centralizado">
         <div class="row">
             <div class="col">
-                <img src="<?=$produto["img_perfil"]?>">
+
+                <img class="selected" src="<?=$produto["img_perfil"]?>">
+                
                     <div class="row subimagens">
                         <?php foreach($imagem AS $item): ?>
                             <div class="col">
@@ -36,6 +38,7 @@ catch(Exception $e){
                             </div>
                         <?php endforeach; ?>                    
                     </div>
+
             </div>
             <div class="col">
                 <h1><?=$produto["nome"]?></h1>
