@@ -36,6 +36,8 @@ require_once("../repetidores/head.php");
                         <input name="peso" type="text" placeholder="Peso">
                             <p>Capacidade e/ou Volume do Produto</p>
                         <input name="capacidade_volume" type="text" placeholder="Capacidade / Volume">
+                            <p>Insira uma descrição do produto</p>
+                        <input name="descricao" type="text" placeholder="Descricao">
                             <p>Material do Produto</p>
                         <input name="material" type="text" placeholder="Material">
                             <p>Dimensões Externas do Produto</p>
@@ -48,8 +50,16 @@ require_once("../repetidores/head.php");
                         <input name="carga_dinamica" type="text" placeholder="Carga Dinâmica">
                             <p>Carga Estática do Produto</p>
                         <input name="carga_estatica" type="text" placeholder="Carga Estática">
-                            <p>Imagem Secundária do Produto</p>
+                            <p>Imagem 2 do produto</p>
                         <input name="img_descricao" type="file">
+                            <p>Imagem 3 do produto</p>
+                        <input name="img3" type="file">
+                            <p>Imagem 4 do produto</p>
+                        <input name="img4" type="file">
+                            <p>Imagem 5 do produto</p>
+                        <input name="img5" type="file">
+                            <p>Imagem 6 do produto</p>
+                        <input name="img6" type="file">
                         <input type="submit" value="Enviar">
                     </form>
 </div>
