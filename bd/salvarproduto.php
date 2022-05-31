@@ -10,7 +10,9 @@
     
     move_uploaded_file($_FILES['img_perfil']['tmp_name'],"../img/imgproduto/".$diretorio);
     move_uploaded_file($_FILES['img_descricao']['tmp_name'],"../img/imgproduto/".$diretorio2);
+    $urlImgDesc = (!empty($_FILES["img_descricao"]["name"])) ? "{$url}img/imgproduto/{$diretorio2}" : "";
     move_uploaded_file($_FILES['img3']['tmp_name'],"../img/imgproduto/".$diretorio3);
+    $urlImg3 = (!empty($_FILES["img3"]["name"])) ? "{$url}img/imgproduto/{$diretorio3}" : "";
     move_uploaded_file($_FILES['img4']['tmp_name'],"../img/imgproduto/".$diretorio4);
     move_uploaded_file($_FILES['img5']['tmp_name'],"../img/imgproduto/".$diretorio5);
     move_uploaded_file($_FILES['img6']['tmp_name'],"../img/imgproduto/".$diretorio6);
@@ -29,8 +31,8 @@
         '{$url}img/imgproduto/{$diretorio}',
         '$_POST[carga_dinamica]',
         '$_POST[carga_estatica]',
-        '{$url}img/imgproduto/{$diretorio2}',
-        '{$url}img/imgproduto/{$diretorio3}',
+        '$urlImgDesc',
+        '$urlImg3',
         '{$url}img/imgproduto/{$diretorio4}',
         '{$url}img/imgproduto/{$diretorio5}',
         '{$url}img/imgproduto/{$diretorio6}'

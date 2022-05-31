@@ -23,38 +23,7 @@ try{
 catch(Exception $e){
     echo("Erro ao pegar os registros");
 }?>
-<script>
-let slideIndex =1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-} 
-</script>
 
 <div class="bgproduto">
     <div class="centralizado">
@@ -66,15 +35,19 @@ function showSlides(n) {
                     <div class="container slides">
         
                             <!-- Full-width images with number text -->
-                            <div class="selected mySlides">
-                            <div class="numbertext">1 / 6</div>
-                                <img src="<?=$produto["img_perfil"]?>" style="width:100%" >
-                            </div>
+                            <?php if(!empty($produto["img_perfil"])): ?>
+                                <div class="mySlides">
+                                     <div class="numbertext">1 / 6</div>
+                                        <img src="<?=$produto["img_perfil"]?>" style="width:100%" >
+                                </div>
+                            <?php endif; ?>
         
-                            <div class="mySlides">
-                            <div class="numbertext">2 / 6</div>
-                                <img src="<?=$produto["img_descricao"]?>" style="width:100%" >
-                            </div>
+                            <?php if(!empty($produto["img_descricao"])): ?>
+                                <div class="mySlides">
+                                     <div class="numbertext">2 / 6</div>
+                                        <img src="<?=$produto["img_descricao"]?>" style="width:100%" >
+                                </div>
+                            <?php endif; ?>
         
                             <?php if(!empty($produto["img3"])): ?>
                                 <div class="mySlides">
@@ -111,12 +84,16 @@ function showSlides(n) {
                             
                             <!-- Thumbnail images -->
                             <div class="row">
-                                <div class="column">
-                                <img class="selected demo cursor" src="<?=$produto["img_perfil"]?>" style="width:100%" onclick="currentSlide(1)" >
-                                </div>
-                                <div class="column">
-                                <img class="demo cursor" src="<?=$produto["img_descricao"]?>" style="width:100%" onclick="currentSlide(2)" >
-                                </div>
+                                <?php if(!empty($produto["img_perfil"])): ?>
+                                    <div class="column">
+                                        <img class="demo cursor" src="<?=$produto["img_perfil"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                    </div>
+                                <?php endif; ?>
+                                <?php if(!empty($produto["img_descricao"])): ?>
+                                    <div class="column">
+                                        <img class="demo cursor" src="<?=$produto["img_descricao"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                    </div>
+                                <?php endif; ?>
                                 <?php if(!empty($produto["img3"])): ?>
                                     <div class="column">
                                         <img class="demo cursor" src="<?=$produto["img3"]?>" style="width:100%" onclick="currentSlide(3)" >
@@ -213,5 +190,37 @@ function showSlides(n) {
     </div>
 </div>
 
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    } 
+    </script>
 
 <?php require_once("../repetidores/footer.php");?>
