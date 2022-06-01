@@ -488,7 +488,7 @@ h4{
 .infoProdutos1 a{
     text-decoration: none !important;
 } 
-.infoProdutos button , .listagemProdutos button{
+.infoProdutos button , .listagemProdutos button, .mapa button{
     padding: 0.5rem 1rem;
     background-color: #0066b4;
     color: white;
@@ -497,7 +497,7 @@ h4{
     display: block;
     margin: 5px auto;
 }
-.infoProdutos button:hover , .listagemProdutos button:hover{
+.infoProdutos button:hover , .listagemProdutos button:hover, .mapa button:hover{
     background-color: #044A80;
 }
 .infoProdutos h1{
@@ -762,3 +762,44 @@ tr{
     opacity: 1;
   }
   /*Fim Slide*/
+  .mapa p, .mapa a{
+      font-family: Roboto Slab;
+      text-decoration: none !important;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      margin: 0 !important;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+  .mapa i{
+      text-decoration: none;
+      color: white;
+      font-size: 40px;
+      margin-left: 5px;
+  }
+  .imgbanner2{
+      display: none;
+  }
+  @media (max-width:600px) {
+  
+    .sobreEsquerda, .listagemProdutos, .esquerda, .direita, .lProdutos, .iconsHome{
+        display: contents;
+    }
+    .infoProdutos h1{
+        transform: translateX(-25%) !important;
+    }
+    nav ul{
+        display: none !important;
+    }
+    .imgbanner{
+        display: none;
+    }
+    .imgbanner2{
+        display: block;
+    }
+    .lProdutos{
+        text-align: justify;
+    }
+}

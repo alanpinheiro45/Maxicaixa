@@ -23,7 +23,7 @@ try{
 
 <div class="bemVindo">
     <div class="centralizado cabeca">
-        <span>Bem-vindo ao site Maxicaixa</span><span><i class="fa-solid fa-phone-flip"></i>(11) 4280.1721</span><span><i class="fa-regular fa-envelope"></i>contato@maxicaixa.com.br</span>
+        <span>Bem-vindo ao site Maxicaixa</span><span><i class="fa-brands fa-whatsapp"></i></i>(19) 99344-2134</span><span><i class="fa-regular fa-envelope"></i>contato@maxicaixa.com.br</span>
         <div class="redesSociais">
             <span><a href="<?=$url?>usuario/login.php"><i class="fa-regular fa-circle-user"></i></a><a href="https://www.facebook.com/maxicaixa" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
         </div>
@@ -56,7 +56,7 @@ try{
                     </ul>
                 </li> 
                 <li><a href="<?=$url?>blog/blog.php">Blog</a></li> 
-                <li><a href="<?=$url?>fale-conosco/index.php">Fale Conosco</a></li> 
+                <li><a href="<?=$url?>fale-conosco/index.php">Faça um Orçamento</a></li> 
                 <li><a href="<?=$url?>upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>       
             </ul>
         </nav>

@@ -74,7 +74,7 @@
     <div class="footer">
         <div class="centralizado">
             <div class="centralizado textoFooter">
-                <p>© Maxicaixa - Copyright 2022 | Todos os direitos reservados | Desenvolvido por: <a href="https://www.linkedin.com/in/alan-pinheiro-60709a1ba/">Alan Pinheiro</a></p>
+                <p>© Maxicaixa - Copyright 2022 | Todos os direitos reservados | Desenvolvido por: <a href="http://www.artilhariamkt.com.br/">Artilharia MKT</a></p>
             </div>
             <div class="centralizado listaFooter">
                 <ul>

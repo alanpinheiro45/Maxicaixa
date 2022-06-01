@@ -5,8 +5,11 @@
 <?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/bd/conexao.php");?>
     </head><body>
 <?php require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/cabecalho.php");?>
-    <div>
+    <div class="imgbanner">
         <img src="<?=$url?>/img/banner.png">
+    </div>
+    <div class="imgbanner2">
+        <img src="<?=$url?>/img/bannercortado.png">
     </div>
     <div class="informacoes">
         <div class="centralizado infoHome">
