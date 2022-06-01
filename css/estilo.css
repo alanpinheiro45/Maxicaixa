@@ -803,9 +803,36 @@ tr{
         text-align: justify;
     }
 }
+/* .iconeBarra{display:none} */
+
+nav ul, .iconeBarra{
+    display:inline-block;
+}
+nav ul{
+    position:relative;
+    top:16rem;
+    left:2rem;
+    overflow-y: scroll;
+}
+nav ul li{
+    display:block;
+    background-color:red;
+}
+nav ul ul:hover{
+    /* transform:translateY(50%); */
+}
+nav ul ul{
+    z-index: 10000;
+    /* position: static; */
+}
+.iconeBarra{
+    vertical-align: top;
+}
 
 @media (max-width:1440px){
+
     nav ul li a{
         padding: 0;
     }
+
 }
