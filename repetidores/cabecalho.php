@@ -60,5 +60,6 @@ try{
                 <li><a href="<?=$url?>upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>       
             </ul>
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </div> 
 </header>

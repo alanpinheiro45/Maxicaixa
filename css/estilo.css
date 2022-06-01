@@ -782,9 +782,20 @@ tr{
   .imgbanner2{
       display: none;
   }
-  @media (max-width:600px) {
-  
-    .sobreEsquerda, .listagemProdutos, .esquerda, .direita, .lProdutos, .iconsHome{
+  .postagem{
+      display: contents;
+      margin: auto;
+  }
+
+
+  @media (max-width:1000px) {
+    .bemVindo{
+          display: none;
+      }
+    h1{
+        font-size: 25px;
+    }
+    .sobreEsquerda, .listagemProdutos, .esquerda, .direita, .lProdutos, .iconsHome, .blog{
         display: contents;
     }
     .infoProdutos h1{
@@ -802,6 +813,8 @@ tr{
     .lProdutos{
         text-align: justify;
     }
+    
+
 }
 
 @media (max-width:1440px){
@@ -809,3 +822,10 @@ tr{
         padding: 0;
     }
 }
+
+@media (max-width:1170){
+    nav ul li a, nav ul li{
+        padding: 0;
+    }
+}
+

@@ -16,11 +16,10 @@ catch(Exception $e){
     echo("Erro ao pegar os registros");
 }?>
 
+<div class="centralizado">
 <div class="postagem">
-
     <?=$postagem["conteudo"]?>
-
-</div>
+</div></div>
 
 
 <?php require_once("../repetidores/footer.php");?>
