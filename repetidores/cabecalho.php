@@ -59,6 +59,9 @@ try{
                 <li><a href="<?=$url?>fale-conosco/index.php">Faça um Orçamento</a></li> 
                 <li><a href="<?=$url?>upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>       
             </ul>
+            <div class="iconeBarra">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
         <i class="fa-solid fa-bars"></i>
     </div> 
