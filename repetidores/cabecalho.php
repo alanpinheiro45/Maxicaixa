@@ -63,6 +63,15 @@ try{
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-        <i class="fa-solid fa-bars"></i>
     </div> 
 </header>
+<script>
+    document.querySelector(".iconeBarra").addEventListener("click", function(){
+        var menu = document.querySelector("nav ul");
+        if(menu.style.display == "block" || menu.style.display == "inline-block"){
+            menu.style.display = "none";    
+        }else{
+            menu.style.display = "inline-block";
+        }
+    });
+</script>

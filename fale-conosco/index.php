@@ -1,5 +1,5 @@
     <?php require_once("../repetidores/head.php"); ?>
-    <title>Fale Conosco • Maxicaixa</title>
+    <title>Faça um Orçamento • Maxicaixa</title>
 <body>
     <?php require_once("../repetidores/cabecalho.php"); ?>
     <div class="contato">
@@ -19,15 +19,44 @@
                     </a></button>
                 </div>
             </div><div class="direita">
-                <form action="<?=$url?>bd/salvarcontato.php" method="get">
-                    <input name="nome" type="text" placeholder="Digite seu nome">
-                    <input name="empresa" type="text" placeholder="Empresa">
-                    <input name="cidade" type="text" placeholder="Cidade">
+            <form>
+                    <input name="name" type="text" placeholder="Digite seu nome">
                     <input name="email" type="email" placeholder="E-mail">
-                    <input name="telefone" type="text" placeholder="Telefone">
-                    <textarea name="mensagem" placeholder="Mensagem" rows="8"></textarea>
-
-                    <input type="submit" value="Enviar">
+                    <input name="phone"type="text" placeholder="Telefone">
+                    <textarea name="interest" placeholder="Mensagem" rows="8"></textarea>
+                    <input name="city" type="text" placeholder="Cidade">
+                    <p>Estado:</p>
+                    <select id="estado" name="state">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                <input type="submit" value="Enviar">
                 </form>
             </div>
     </div>

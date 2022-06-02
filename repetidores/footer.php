@@ -20,38 +20,7 @@
                         <a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><li><i class="fa-brands fa-instagram"></i></li></a>
                     </ul>
                 </div>
-                <div class="col">
-                    <div class="ultimosArtigos">
-                        <h4>Últimos artigos</h4>
-                        <div class="uArtigos">
-                            <div class="uaEsquerda">
-                                <p>Como otimizar a Armazenagem Industrial</p>
-                                <span><i class="fa-regular fa-clock"></i> 12 de Desembro de 2022</span>
-                            </div>
-                            <div class="uaDireita">
-                                <img src="<?=$url?>img/03maxicaixa-post1.jpg">
-                            </div>
-                        </div>
-                        <div class="uArtigos">
-                            <div class="uaEsquerda">
-                                <p>Pallet industrial – conheça as vantagens do produto!</p>
-                                <span><i class="fa-regular fa-clock"></i> 12 de Desembro de 2022</span>
-                            </div>
-                            <div class="uaDireita">
-                                <img src="<?=$url?>img/02maxicaixa-post1-948x750.jpg">
-                            </div>
-                        </div>
-                        <div class="uArtigos">
-                            <div class="uaEsquerda">
-                                <p>Maxicaixa apresenta inovação em gaiolas na AveSui</p>
-                                <span><i class="fa-regular fa-clock"></i> 12 de Desembro de 2022</span>
-                            </div>
-                            <div class="uaDireita">
-                                <img src="<?=$url?>img/01maxicaixa-post1-948x750.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col">
                     <?php require("infocontato.php");?>
                 </div>

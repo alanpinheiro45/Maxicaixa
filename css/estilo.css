@@ -146,7 +146,7 @@ nav ul li a:hover{
     float: right;
     padding-left: 2rem;
 }
-.direita input , textarea{
+.direita input , textarea, select{
     width: 100%;
     padding: 0.625rem;
     border: 1px solid #666;
@@ -786,6 +786,9 @@ tr{
       display: contents;
       margin: auto;
   }
+  .iconeBarra{
+    display: none;
+}
 
 
   @media (max-width:1000px) {
@@ -801,9 +804,7 @@ tr{
     .infoProdutos h1{
         transform: translateX(-25%) !important;
     }
-    nav ul{
-        display: none !important;
-    }
+    
     .imgbanner{
         display: none;
     }
@@ -814,32 +815,6 @@ tr{
         text-align: justify;
     }
     
-
-}
-/* .iconeBarra{display:none} */
-
-nav ul, .iconeBarra{
-    display:inline-block;
-}
-nav ul{
-    position:relative;
-    top:16rem;
-    left:2rem;
-    overflow-y: scroll;
-}
-nav ul li{
-    display:block;
-    background-color:red;
-}
-nav ul ul:hover{
-    /* transform:translateY(50%); */
-}
-nav ul ul{
-    z-index: 10000;
-    /* position: static; */
-}
-.iconeBarra{
-    vertical-align: top;
 }
 
 @media (max-width:1440px){
@@ -855,3 +830,25 @@ nav ul ul{
     }
 }
 
+@media (max-width:1440px){
+    nav ul, .iconeBarra{
+        display:inline-block;
+    }
+    nav ul{
+        position:relative;
+        top:16rem;
+        left:2rem;
+        overflow-y: scroll;
+        display: none;
+    }
+    nav ul li{
+        display:block;
+        background-color: white;
+    }
+    nav ul ul{
+        z-index: 10000;
+    }
+    .iconeBarra{
+        vertical-align: top;
+    }
+}
