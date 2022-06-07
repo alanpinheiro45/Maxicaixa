@@ -8,7 +8,7 @@
         <p>Entre em contato com a Maxicaixa. Nossa equipe está sempre pronta para te atender.</p>
     </div>
 
-    <div class="centralizado">
+    <div class="centralizado formulario">
             <div class="esquerda">
                 <?php require("../repetidores/infocontato.php");?>
                 <div class="mapa">
@@ -19,11 +19,26 @@
                     </a></button>
                 </div>
             </div><div class="direita">
-            <form>
+            <form action="../bd/envia_email.php" name="sendemail" method="post" >
                     <input name="name" type="text" placeholder="Digite seu nome">
+                    <input name="empresa" type="text" placeholder="Digite o nome da empresa">
+                    <input name="cnpj" type="text" placeholder="Digite o cnpj da empresa">
                     <input name="email" type="email" placeholder="E-mail">
                     <input name="phone"type="text" placeholder="Telefone">
-                    <textarea name="interest" placeholder="Mensagem" rows="8"></textarea>
+                    <p>Qual a linha de interesse:</p>
+                    <select name="linha" id="opcao">
+                        <option value="CaixaPalletGLT">Caixa Pallet GLT</option>
+                        <option value="CaixasVazadas">Caixas Vazadas</option>
+                        <option value="Cestos">Cestos</option>
+                        <option value="ContentorPlastico40">Contentor Plástico 40</option>
+                        <option value="Estratos">Estratos</option>
+                        <option value="GaveteirosBIN">Gaveteiros BIN</option>
+                        <option value="Linha1000">Linha 1000</option>
+                        <option value="LinhaRKLT">Linha RKLT</option>
+                        <option value="LinhasFlexALC">Linhas Flex ALC</option>
+                        <option value="Pallets">Pallets</option>
+                    </select>
+                    <textarea name="interest" placeholder="Mensagem" rows="1"></textarea>
                     <input name="city" type="text" placeholder="Cidade">
                     <p>Estado:</p>
                     <select id="estado" name="state">

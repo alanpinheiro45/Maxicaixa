@@ -33,7 +33,7 @@ try{
                     <div class="txtProdutos">
                         <p><?= $item["nome"] ?></p>
                     </div></a>
-                    <button>Solicitar um Cotação</button>
+                    <a href="../fale-conosco/index.php"><button>Solicitar um Cotação</button></a>
                 </div>
 
                 <?php endforeach; ?>

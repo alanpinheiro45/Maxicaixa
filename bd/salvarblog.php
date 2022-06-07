@@ -15,6 +15,7 @@ move_uploaded_file($_FILES['img_miniatura']['tmp_name'],"../img/imgblog/".$diret
     if($cont>0){
         require_once("../blog/postagemsalva.php");
     }else{
+        var_dump($PDO);
         echo("Erro ao inserir dados");}
 
 
