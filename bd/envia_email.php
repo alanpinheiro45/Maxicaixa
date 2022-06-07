@@ -61,8 +61,7 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 var_dump($_POST);
 $enviaremail = mail($destino, $assunto, $arquivo, $headers);
 if($enviaremail){
-$mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
-echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
+    require_once("../bd/envio_email_sucesso.php");
 } else {
 $mgm = "ERRO AO ENVIAR E-MAIL!";
 echo "";
