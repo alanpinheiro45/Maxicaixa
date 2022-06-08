@@ -15,11 +15,14 @@ try{
 catch(Exception $e){
     echo("Erro ao pegar os registros");
 }?>
+    <title>Post</title>
+<div class="centralizado blogPost">
+    <div class="postagem">
+        <?=$postagem["conteudo"]?>
+    </div>
 
-<div class="centralizado">
-<div class="postagem">
-    <?=$postagem["conteudo"]?>
-</div></div>
+    <button><a href="../index.php">VOLTAR PARA A PAGINA INICIAL</a></button>
+</div>
 
 
 <?php require_once("../repetidores/footer.php");?>

@@ -85,7 +85,7 @@ nav ul ul{
     top: 4rem;
     left: 0;
     transform: none !important;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 nav > ul > li:hover > ul{
     display: block;
@@ -210,7 +210,7 @@ h3{
     text-align: center;
     font-family: Roboto Slab;
     margin-bottom: 3.75rem;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 .blogItem{
     display:inline-block;
@@ -264,6 +264,10 @@ h3{
     float: right;
     border-left: 1px solid #7e7373;
     padding-left: 2px;
+}
+.blogPost a{
+    text-decoration: none;
+    color: white;
 }
 .textoMissao{
     background-color: #414141;
@@ -369,7 +373,7 @@ h4{
     background-position: bottom;
     padding-top: 4rem;
     font-family: Roboto Slab;
-    margin-bottom: 3.75rem;
+    margin-bottom: 1rem;
 }
 .sobreNos h1{
     font-size: 55px;
@@ -409,7 +413,6 @@ h4{
 .fConosco{
     text-align: center;
     color: #2C2C2C;
-    padding-top: 4rem;
     font-family: Roboto Slab;
     margin-bottom: 3.75rem;
 }
@@ -444,7 +447,7 @@ h4{
     color: #626262;
 }
 .informacoes{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 60px 0;
 }
 .infoHome h1{
@@ -471,8 +474,11 @@ h4{
     color: #414141;
     font-weight: 100;
 }
+.iconsHome a{
+    text-decoration: none;
+}
 .infoProdutos{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 .txtProdutos{
     text-align: center;
@@ -488,7 +494,7 @@ h4{
 .infoProdutos1 a{
     text-decoration: none !important;
 } 
-.infoProdutos button , .listagemProdutos button, .mapa button{
+.infoProdutos button , .listagemProdutos button, .mapa button, .blogPost button{
     padding: 0.5rem 1rem;
     background-color: #0066b4;
     color: white;
@@ -527,12 +533,12 @@ h4{
 }
 .lProdutos p , .listagemProdutos p{
     font-family: Roboto Slab;
-    font-size: 20px;
+    
     color: #989898;
     text-align: center;
 }
 .lProdutos , .listagemProdutos{
-    padding: 40px;
+    padding: 40px 0px;
 }
 .iconsHome .col{
     border-right: 1px solid #989898;
@@ -553,7 +559,7 @@ h4{
 }
 .bgproduto{
     padding: 50px;
-    background-color: aliceblue;
+    background-color: white;
     font-family: Roboto Slab;
     font-size: 35px;
     color: #414141;
@@ -613,7 +619,7 @@ h4{
     text-align: center;
     font-family: Roboto Slab;
     color: #414141;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 150px;
 }
 .pdsalvo h1{
@@ -624,7 +630,7 @@ tr{
 }
 .login , .menu{
     padding: 100px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 .login h1 , .menu h1{
     text-align: center !important;
@@ -646,8 +652,11 @@ tr{
     display: block !important;
 }
 .blog{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     margin-top: 20px;
+}
+.blogPost{
+    padding-top: 20px;
 }
 .blogtitle h1{
     font-family: Roboto Slab !important;

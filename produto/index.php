@@ -27,7 +27,7 @@ catch(Exception $e){
     echo("Erro ao pegar os registros");
 }?>
 
-
+<title>Produto • Maxicaixa</title>
 <div class="bgproduto">
     <div class="centralizado">
         <div class="row">

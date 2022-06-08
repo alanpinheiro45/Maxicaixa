@@ -29,14 +29,14 @@ try{
 
 
                 <div class="col-4">
-                    <a href="<?=$url?>produto/index.php?titulo=<?=$item['nome']?>">
+                <a href="<?=$url?>produto/index.php?titulo=<?=urlencode($item['nome'])?>">
                     <div class="imgProdutos">
                         <img src="<?=$item["img_perfil"]?>">
                     </div>
                     <div class="txtProdutos">
                         <p><?= $item["nome"] ?></p>
                     </div></a>
-                    <button>Solicitar um Cotação</button>
+                    <a href="../fale-conosco/index.php"><button>Solicitar um Cotação</button></a>
                 </div>
 
                 <?php endforeach; ?>

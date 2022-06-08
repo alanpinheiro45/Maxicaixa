@@ -27,7 +27,7 @@
                         <option value="CaixasVazadas">Caixas Vazadas</option>
                         <option value="Cestos">Cestos</option>
                         <option value="ContentorPlastico40">Contentor Plástico 40</option>
-                        <option value="Estratos">Estratos</option>
+                        <option value="Estratos">Estrados</option>
                         <option value="GaveteirosBIN">Gaveteiros BIN</option>
                         <option value="Linha1000">Linha 1000</option>
                         <option value="LinhaRKLT">Linha RKLT</option>

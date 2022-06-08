@@ -28,7 +28,7 @@ try{
 
 
                 <div class="col-4">
-                    <a href="<?=$url?>produto/index.php?id=<?=$item['id']?>">
+                    <a href="<?=$url?>produto/<?=urlencode($item['nome'])?>">
                     <div class="imgProdutos">
                         <img src="<?=$item["img_perfil"]?>">
                     </div>

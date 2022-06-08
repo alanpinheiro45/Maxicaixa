@@ -48,7 +48,7 @@ $arquivo = "
 </html>
 " ;
 
-$emailenviar = "alanzinhopinheiro45@gmail.com";
+$emailenviar = "comercial@maxicaixa.com.br";
 $destino = $emailenviar;
 $assunto = "Contato pelo Site";
 
@@ -58,13 +58,11 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'From: <$nome> <$email>';
 //$headers .= "Bcc: $EmailPadrao\r\n";
 
-var_dump($_POST);
 $enviaremail = mail($destino, $assunto, $arquivo, $headers);
 if($enviaremail){
     require_once("../bd/envio_email_sucesso.php");
 } else {
 $mgm = "ERRO AO ENVIAR E-MAIL!";
-echo "";
 }
 
 

@@ -1,0 +1,6 @@
+RewriteEngine On
+    #aqui criamos uma condição para que os arquivos sejam ignorados nas regras abaixo
+
+    RewriteRule ^segmentos/([A-Za-z0-9/+]+)$ segmentos/index.php?titulo=$1
+    RewriteRule ^categoria-produto/([A-Za-z0-9/+]+)$ categoria-produto/index.php?titulo=$1
+    #RewriteRule ^produto/([A-Za-z0-9/+]+)$ produto/index.php?titulo=$1

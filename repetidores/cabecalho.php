@@ -38,10 +38,11 @@ try{
             <ul>
                 <li><a href="<?=$url?>index.php">Home</a></li>
                 <li><a href="<?=$url?>sobre-nos/index.php">Sobre nós</a></li>
-                <li> <a href="<?=$url?>produtos/index.php"> Produtos</a>
+                <li><a href="<?=$url?>fale-conosco/index.php">Faça um Orçamento</a></li> 
+                <li> <a href="<?=$url?>produtos/index.php">Linhas de Produtos</a>
                     <ul>
                         <?php foreach($lprodutos as $item): ?>
-                        <li><a href="<?= $url. "categoria-produto/index.php?titulo=".urlencode($item['nome']) ?>">
+                        <li><a href="<?= $url. "categoria-produto/".urlencode($item['nome']) ?>">
                             <?= $item["nome"] ?> </a>
                         </li>
                         <?php endforeach; ?>
@@ -50,14 +51,13 @@ try{
                 <li>Segmentos
                     <ul>
                     <?php foreach($rsegmentos as $item): ?>
-                        <li><a href="<?= $url. "segmentos/index.php?titulo=$item[nome]" ?>">
+                        <li><a href="<?= $url. "segmentos/$item[nome]" ?>">
                             <?= $item["nome"] ?> </a>
                         </li>
                         <?php endforeach; ?>
                     </ul>
                 </li> 
                 <li><a href="<?=$url?>blog/blog.php">Blog</a></li> 
-                <li><a href="<?=$url?>fale-conosco/index.php">Faça um Orçamento</a></li> 
                 <li><a href="<?=$url?>upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>       
             </ul>
             <div class="iconeBarra">

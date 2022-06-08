@@ -12,7 +12,7 @@ require_once("../repetidores/head.php");
                             
                         <label><input type="checkbox" name="segmentos[0]" value="1">Agronegócio</label> 
                         <label><input type="checkbox" name="segmentos[1]" value="2">Automotiva</label> 
-                        <label><input type="checkbox" name="segmentos[2]" value="3">Avícula</label> 
+                        <label><input type="checkbox" name="segmentos[2]" value="3">Avícola</label> 
                         <label><input type="checkbox" name="segmentos[3]" value="4">Farmacêutica</label> 
                         <label><input type="checkbox" name="segmentos[4]" value="5">Industrial</label> 
                             
@@ -21,9 +21,9 @@ require_once("../repetidores/head.php");
                         <select name="select">
                             <option value="1" selected>Caixa Pallet GLT</option>
                             <option value="2">Caixas Vazadas</option>
-                            <option value="3">Cestos</option>
+                            <option value="3">Cestos Expositores</option>
                             <option value="4">Contentor Plástico 40</option>
-                            <option value="5">Estratos</option>
+                            <option value="5">Estrados</option>
                             <option value="6">Gaveteiros BIN</option>
                             <option value="7">Linha 1000</option>
                             <option value="8">Linha RKLT</option>
