@@ -24,6 +24,7 @@ try{
 <div class="bemVindo">
     <div class="centralizado cabeca">
         <span>Bem-vindo ao site Maxicaixa</span><span><i class="fa-brands fa-whatsapp"></i></i>(19) 99344-2134</span><span><i class="fa-regular fa-envelope"></i>contato@maxicaixa.com.br</span>
+        
         <div class="redesSociais">
             <span><a href="<?=$url?>usuario/login.php"><i class="fa-regular fa-circle-user"></i></a><a href="https://www.facebook.com/maxicaixa" target="_blank"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/company/maxicaixa/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/maxicaixa.com.br" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
         </div>
