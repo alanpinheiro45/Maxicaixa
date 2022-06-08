@@ -9,13 +9,17 @@
     $diretorio6=date("Y-m-d-H-i-s").$_FILES['img6']['name'];
     
     move_uploaded_file($_FILES['img_perfil']['tmp_name'],"../img/imgproduto/".$diretorio);
+    $urlImgPerfil = (!empty($_FILES["img_perfil"]["name"])) ? "{$url}img/imgproduto/{$diretorio}" : "";
     move_uploaded_file($_FILES['img_descricao']['tmp_name'],"../img/imgproduto/".$diretorio2);
     $urlImgDesc = (!empty($_FILES["img_descricao"]["name"])) ? "{$url}img/imgproduto/{$diretorio2}" : "";
     move_uploaded_file($_FILES['img3']['tmp_name'],"../img/imgproduto/".$diretorio3);
     $urlImg3 = (!empty($_FILES["img3"]["name"])) ? "{$url}img/imgproduto/{$diretorio3}" : "";
     move_uploaded_file($_FILES['img4']['tmp_name'],"../img/imgproduto/".$diretorio4);
+    $urlImg4 = (!empty($_FILES["img4"]["name"])) ? "{$url}img/imgproduto/{$diretorio4}" : "";
     move_uploaded_file($_FILES['img5']['tmp_name'],"../img/imgproduto/".$diretorio5);
+    $urlImg5 = (!empty($_FILES["img5"]["name"])) ? "{$url}img/imgproduto/{$diretorio5}" : "";
     move_uploaded_file($_FILES['img6']['tmp_name'],"../img/imgproduto/".$diretorio6);
+    $urlImg6 = (!empty($_FILES["img6"]["name"])) ? "{$url}img/imgproduto/{$diretorio6}" : "";
 
     try{
         $contador=$PDO->exec("INSERT INTO produtos VALUES (
@@ -28,14 +32,14 @@
         '$_POST[material]',
         '$_POST[dimensoes_externas]',
         '$_POST[dimensoes_internas]',
-        '{$url}img/imgproduto/{$diretorio}',
+        '$urlImgPerfil,
         '$_POST[carga_dinamica]',
         '$_POST[carga_estatica]',
         '$urlImgDesc',
         '$urlImg3',
-        '{$url}img/imgproduto/{$diretorio4}',
-        '{$url}img/imgproduto/{$diretorio5}',
-        '{$url}img/imgproduto/{$diretorio6}'
+        '$urlImg4',
+        '$urlImg5',
+        '$urlImg6'
         )");
             
             $lastid = $PDO->lastInsertId();

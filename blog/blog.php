@@ -12,7 +12,7 @@ $resultados=$PDO->query("SELECT id, titulo, img_miniatura, resumo FROM blog_post
     <h1>Blog Maxicaixa</h1>
 </div>
 <div class="centralizado blog">
-    <div class="row">
+    <div class="row infoProdutos1">
     <?php foreach($resultados as $item): ?>
 
         <div class="col-4">

@@ -5,13 +5,16 @@ require_once("../repetidores/cabecalho.php");
 require_once("../bd/conexao.php");
 
 try{
-    $resultproduto = $PDO->query("SELECT * FROM produtos WHERE id = $_GET[id]" , PDO::FETCH_ASSOC);
-    $resultsegmento = $PDO->query("SELECT segmentos.nome FROM segmentos, rl_produto_segmentos , produtos WHERE segmentos.id = rl_produto_segmentos.idSegmentos AND produtos.id = rl_produto_segmentos.idProduto AND produtos.id = $_GET[id]", PDO::FETCH_ASSOC);
-    $resultimg = $PDO->query("SELECT * FROM img_produto WHERE img_produto.idProduto = $_GET[id]" , PDO::FETCH_ASSOC);
+    $nomeTitulo = urldecode($_GET["titulo"]);
+    $resultproduto = $PDO->query("SELECT * FROM produtos WHERE nome = '$nomeTitulo'" , PDO::FETCH_ASSOC);
 
     if($resultproduto != false){
         $produto = $resultproduto->fetch();
     }
+
+    $resultsegmento = $PDO->query("SELECT segmentos.nome FROM segmentos, rl_produto_segmentos , produtos WHERE segmentos.id = rl_produto_segmentos.idSegmentos AND produtos.id = rl_produto_segmentos.idProduto AND produtos.id = $produto[id]", PDO::FETCH_ASSOC);
+    $resultimg = $PDO->query("SELECT * FROM img_produto WHERE img_produto.idProduto = $produto[id]" , PDO::FETCH_ASSOC);
+
     
     if($resultsegmento != false){
         $segmento = $resultsegmento->fetchAll();

@@ -48,7 +48,7 @@ $arquivo = "
 </html>
 " ;
 
-$emailenviar = "alanzinhopinheiro@gmail.com";
+$emailenviar = "alanzinhopinheiro45@gmail.com";
 $destino = $emailenviar;
 $assunto = "Contato pelo Site";
 

@@ -40,7 +40,7 @@ try{
                 <li> <a href="<?=$url?>produtos/index.php"> Produtos</a>
                     <ul>
                         <?php foreach($lprodutos as $item): ?>
-                        <li><a href="<?= $url. "categoria-produto/index.php?id=$item[id]" ?>">
+                        <li><a href="<?= $url. "categoria-produto/index.php?titulo=".urlencode($item['nome']) ?>">
                             <?= $item["nome"] ?> </a>
                         </li>
                         <?php endforeach; ?>
@@ -49,7 +49,7 @@ try{
                 <li>Segmentos
                     <ul>
                     <?php foreach($rsegmentos as $item): ?>
-                        <li><a href="<?= $url. "segmentos/index.php?id=$item[id]" ?>">
+                        <li><a href="<?= $url. "segmentos/index.php?titulo=$item[nome]" ?>">
                             <?= $item["nome"] ?> </a>
                         </li>
                         <?php endforeach; ?>

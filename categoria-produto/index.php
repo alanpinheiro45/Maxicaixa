@@ -5,7 +5,10 @@ require_once("../repetidores/cabecalho.php");
 require_once("../bd/conexao.php");
 
 try{
-    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos , categoria_produto WHERE produtos.id_categoria = categoria_produto.id AND categoria_produto.id = $_GET[id]",PDO::FETCH_ASSOC);
+    $nomeTitulo = urldecode($_GET["titulo"]);
+    $resultadoID=$PDO->query("SELECT * FROM categoria_produto WHERE nome = '$nomeTitulo'");
+    $resultadoID = $resultadoID->fetch();
+    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos , categoria_produto WHERE produtos.id_categoria = categoria_produto.id AND categoria_produto.id = $resultadoID[id]",PDO::FETCH_ASSOC);
 
     if($resultados == false){
         echo("Erro ao consultar os dados");
@@ -26,7 +29,7 @@ try{
 
 
                 <div class="col-4">
-                    <a href="<?=$url?>/produto/index.php?id=<?=$item['id']?>">
+                    <a href="<?=$url?>produto/index.php?titulo=<?=$item['nome']?>">
                     <div class="imgProdutos">
                         <img src="<?=$item["img_perfil"]?>">
                     </div>

@@ -36,12 +36,12 @@ try{
             <?php foreach($resultados as $item): ?>
                 <div class="col-4">
 
-                    <a href="<?=$url?>produto/index.php?id=<?=$item['id']?>">
+                    <a href="<?=$url?>produto/index.php?titulo=<?=urlencode($item['nome'])?>">
                         <div class="imgProdutos">
                             <img src="<?=$item["img_perfil"]?>">
                         </div>
                         <div class="txtProdutos">
-                        <p><?= $item["nome"] ?></p>
+                            <p><?= $item["nome"] ?></p>
                         </div>
                     </a>
 

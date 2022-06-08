@@ -29,6 +29,7 @@ require_once("../repetidores/head.php");
                             <option value="8">Linha RKLT</option>
                             <option value="9">Linha Flex ALC</option>
                             <option value="10">Pallets</option>
+                            <option value="11">Estantes</option>
                         </select>
                             <p>Nome do Produto</p>
                         <input name="nome" type="text" placeholder="Digite o nome do produto">
