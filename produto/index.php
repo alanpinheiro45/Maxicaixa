@@ -36,46 +36,63 @@ catch(Exception $e){
                 <div class="row">
                                       
                     <div class="container slides">
+
+                            <?php
+                            $cont = 0;
+
+                                if(!empty($produto["img_perfil"]))
+                                    $cont++;
+                                if(!empty($produto["img_descricao"]))
+                                    $cont++;
+                                if(!empty($produto["img3"]))
+                                    $cont++;
+                                if(!empty($produto["img4"]))
+                                    $cont++;
+                                if(!empty($produto["img5"]))
+                                    $cont++;
+                                if(!empty($produto["img6"]))
+                                    $cont++;    
+                            ?>
         
                             <!-- Full-width images with number text -->
                             <?php if(!empty($produto["img_perfil"])): ?>
                                 <div class="mySlides">
-                                     <div class="numbertext">1 / 6</div>
+                                     <div class="numbertext">1 /<?=$cont?></div>
                                         <img src="<?=$produto["img_perfil"]?>" style="width:100%" >
                                 </div>
                             <?php endif; ?>
         
                             <?php if(!empty($produto["img_descricao"])): ?>
                                 <div class="mySlides">
-                                     <div class="numbertext">2 / 6</div>
+                                     <div class="numbertext">2 /<?=$cont?></div>
                                         <img src="<?=$produto["img_descricao"]?>" style="width:100%" >
                                 </div>
                             <?php endif; ?>
         
                             <?php if(!empty($produto["img3"])): ?>
                                 <div class="mySlides">
-                                     <div class="numbertext">3 / 6</div>
+                                     <div class="numbertext">3 /<?=$cont?></div>
                                         <img src="<?=$produto["img3"]?>" style="width:100%" >
                                 </div>
                             <?php endif; ?>
         
                             <?php if(!empty($produto["img4"])): ?>
                                 <div class="mySlides">
-                                     <div class="numbertext">4 / 6</div>
+                                     <div class="numbertext">4 /<?=$cont?></div>
                                         <img src="<?=$produto["img4"]?>" style="width:100%" >
                                 </div>
                             <?php endif; ?>
         
                             <?php if(!empty($produto["img5"])): ?>
                                 <div class="mySlides">
-                                     <div class="numbertext">5 / 6</div>
+                                     <div class="numbertext">5 /<?=$cont?></div>
                                         <img src="<?=$produto["img5"]?>" style="width:100%" >
                                 </div>
                             <?php endif; ?>
         
                             <?php if(!empty($produto["img6"])): ?>
                                 <div class="mySlides">
-                                     <div class="numbertext">6 / 6</div>
+                                     <div class="numbertext">6 /<?=$cont?></div>
                                         <img src="<?=$produto["img6"]?>" style="width:100%" >
                                 </div>
                             <?php endif; ?>
@@ -89,12 +106,12 @@ catch(Exception $e){
                             <div class="row">
                                 <?php if(!empty($produto["img_perfil"])): ?>
                                     <div class="column">
-                                        <img class="demo cursor" src="<?=$produto["img_perfil"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                        <img class="demo cursor" src="<?=$produto["img_perfil"]?>" style="width:100%" onclick="currentSlide(1)" >
                                     </div>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["img_descricao"])): ?>
                                     <div class="column">
-                                        <img class="demo cursor" src="<?=$produto["img_descricao"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                        <img class="demo cursor" src="<?=$produto["img_descricao"]?>" style="width:100%" onclick="currentSlide(2)" >
                                     </div>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["img3"])): ?>
@@ -104,17 +121,17 @@ catch(Exception $e){
                                 <?php endif; ?>
                                 <?php if(!empty($produto["img4"])): ?>
                                     <div class="column">
-                                        <img class="demo cursor" src="<?=$produto["img4"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                        <img class="demo cursor" src="<?=$produto["img4"]?>" style="width:100%" onclick="currentSlide(4)" >
                                     </div>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["img5"])): ?>
                                     <div class="column">
-                                        <img class="demo cursor" src="<?=$produto["img5"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                        <img class="demo cursor" src="<?=$produto["img5"]?>" style="width:100%" onclick="currentSlide(5)" >
                                     </div>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["img6"])): ?>
                                     <div class="column">
-                                        <img class="demo cursor" src="<?=$produto["img6"]?>" style="width:100%" onclick="currentSlide(3)" >
+                                        <img class="demo cursor" src="<?=$produto["img6"]?>" style="width:100%" onclick="currentSlide(6)" >
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -129,7 +146,7 @@ catch(Exception $e){
                 <h1><?=$produto["nome"]?></h1>
                 <div class="descricaopd">
                     <div class="tabeladescricao">
-                        <table class="table table-bordered">
+                        <table class="table">
                             
                             <tr>
                                 <?php if(!empty($produto["peso"])): ?>
@@ -226,4 +243,5 @@ catch(Exception $e){
     } 
     </script>
 
+<?php require_once("../repetidores/faleconosco.php");?>
 <?php require_once("../repetidores/footer.php");?>

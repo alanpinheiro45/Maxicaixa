@@ -447,7 +447,7 @@ h4{
     color: #626262;
 }
 .informacoes{
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     padding: 60px 0;
 }
 .infoHome h1{
@@ -652,7 +652,7 @@ tr{
     display: block !important;
 }
 .blog{
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     margin-top: 20px;
 }
 .blogPost{

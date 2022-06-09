@@ -25,7 +25,7 @@
                     <select name="linha">
                         <option value="CaixaPalletGLT">Caixa Pallet GLT</option>
                         <option value="CaixasVazadas">Caixas Vazadas</option>
-                        <option value="Cestos">Cestos</option>
+                        <option value="Cestos">Cestos Expositores</option>
                         <option value="ContentorPlastico40">Contentor Plástico 40</option>
                         <option value="Estratos">Estrados</option>
                         <option value="GaveteirosBIN">Gaveteiros BIN</option>
@@ -33,6 +33,7 @@
                         <option value="LinhaRKLT">Linha RKLT</option>
                         <option value="LinhasFlexALC">Linhas Flex ALC</option>
                         <option value="Pallets">Pallets</option>
+                        <option value="Pallets">Estantes</option>
                     </select>
                     <textarea name="interest" placeholder="Mensagem" rows="1"></textarea>
                     <input name="city" type="text" placeholder="Cidade">
