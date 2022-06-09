@@ -387,7 +387,7 @@ h4{
     font-size: 30px;
     color: #414141;
 }
-.sobreEsquerda h5{
+.sobreEsquerda h3{
     font-family: Roboto Slab;
     font-size: 15px;
     color: #989898;
@@ -518,12 +518,10 @@ h4{
 }
 .infoLProdutos img{
     width: 50%;
-    display: inline-block;
 }
-.infoLProdutos p{
+.infoLProdutos h3, .infoLProdutos p{
     width: 46%;
-    display: inline-block;
-    text-align: left !important;
+    text-align: center !important;
 }
 .lProdutos h1 , .listagemProdutos h1{
     font-family: Roboto Slab;
@@ -531,11 +529,14 @@ h4{
     color: #414141;
     text-align: center;
 }
-.lProdutos p , .listagemProdutos p{
+.lProdutos p, .lProdutos h3, .listagemProdutos p{
     font-family: Roboto Slab;
     
     color: #989898;
     text-align: center;
+}
+.lProdutos h3{
+    font-size: 16px;
 }
 .lProdutos , .listagemProdutos{
     padding: 40px 0px;
@@ -576,6 +577,9 @@ h4{
 }
 .tabeladescricao{
     font-size: 15px !important;
+}
+.tabeladescricao h3{
+    font-size: 15px;
 }
 .cd_produtos{
     padding: 30px;

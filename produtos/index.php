@@ -36,7 +36,7 @@ try{
             <?php foreach($resultados as $item): ?>
                 <div class="col-4">
 
-                    <a href="<?=$url?>produto/index.php?titulo=<?=urlencode($item['nome'])?>">
+                    <a href="<?=$url?>produto/<?=urlencode($item['nome'])?>">
                         <div class="imgProdutos">
                             <img src="<?=$item["img_perfil"]?>">
                         </div>

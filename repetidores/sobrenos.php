@@ -6,7 +6,7 @@
         <div class="centralizado textoNos">
             <div class="row">
                 <div class="col-5 sobreEsquerda">
-                    <h5>BEM-VINDO A MAXICAIXA</h5>
+                    <h3>BEM-VINDO A MAXICAIXA</h3>
                     <h2>Instalada na cidade de Limeira a Maxicaixa industrializa produtos de material plástico.</h2>
                     <ul>
                         <li>Produtos de qualidade assegurada</li>

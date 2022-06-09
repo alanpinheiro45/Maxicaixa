@@ -150,16 +150,16 @@ catch(Exception $e){
                             
                             <tr>
                                 <?php if(!empty($produto["peso"])): ?>
-                                    <th>Peso</th>
+                                    <th><h3>Peso</h3></th>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["dimensoes_externas"])): ?>
-                                    <th>Dimensões Externas</th>
+                                    <th><h3>Dimensões Externas</h3></th>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["material"])): ?>
-                                    <th>Material</th>
+                                    <th><h3>Material</h3></th>
                                 <?php endif; ?>    
                                 <?php if(!empty($produto["dimensoes_internas"])): ?>
-                                    <th>Dimensões Internas</th>
+                                    <th><h3>Dimensões Internas</h3></th>
                                 <?php endif; ?>    
                             </tr>
                             <tr>
@@ -178,13 +178,13 @@ catch(Exception $e){
                             </tr>    
                             <tr>
                                 <?php if(!empty($produto["capacidade_volume"])): ?>
-                                    <th>Capacidade / Volume</th>
+                                    <th><h3>Capacidade / Volume</h3></th>
                                 <?php endif;?>
                                 <?php if(!empty($produto["carga_dinamica"])): ?>
-                                    <th>Carga Dinâmica</th>
+                                    <th><h3>Carga Dinâmica</h3></th>
                                 <?php endif; ?>
                                 <?php if(!empty($produto["carga_estatica"])): ?>
-                                    <th>Carga Estática</th>
+                                    <th><h3>Carga Estática</h3></th>
                                 <?php endif; ?>
                             </tr>
                             <tr>
