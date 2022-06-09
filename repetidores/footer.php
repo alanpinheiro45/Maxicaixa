@@ -29,7 +29,7 @@
                     <ul>
                         <li>Agronegócio</li>
                         <li>Automotiva</li>
-                        <li>Avícula</li>
+                        <li>Avícola</li>
                         <li>Farmacêutica</li>
                         <li>Industrial</li>
                     </ul>

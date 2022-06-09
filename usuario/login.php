@@ -10,8 +10,6 @@ if(isset($_SESSION["logado"])){
 }
 require_once("../repetidores/cabecalho.php");
 
-//var_dump($_SESSION);
-//var_dump(session_id());
 
 ?>
 

@@ -32,7 +32,7 @@
         '$_POST[material]',
         '$_POST[dimensoes_externas]',
         '$_POST[dimensoes_internas]',
-        '$urlImgPerfil,
+        '$urlImgPerfil',
         '$_POST[carga_dinamica]',
         '$_POST[carga_estatica]',
         '$urlImgDesc',
@@ -44,13 +44,13 @@
             
             $lastid = $PDO->lastInsertId();
         foreach($_POST["segmentos"] as $item){
-            $PDO->exec("INSERT INTO rl_produto_segmentos VALUES(default, '$lastid', '$item')");
+            $PDO->exec("INSET INTO rl_produto_segmentos VALUES(default, '$lastid', '$item')");
         }
 
     }catch(Exception $e){
         echo("Erro na consulta".$e->getMessage());
     }
-   
+    
     if($contador>0){
         require_once("../produto/salvoproduto.php");
     }else{

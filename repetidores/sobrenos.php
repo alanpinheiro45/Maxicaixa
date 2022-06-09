@@ -18,11 +18,11 @@
                 </div>
                 <div class="col sobreDireita">
                     <p>É pensando em soluções práticas e objetivas que os produtos MAXICAIXA chegam até sua empresa – visando o máximo desempenho em organização, visualização e economia de espaço sendo utilizados em diversos ramos da atividade industrial, comercial e agrícola. Com larga experiência no mercado, a MAXICAIXA segue a mesma filosofia de trabalho desde o início de suas atividades. É essa postura, aliada ao padrão de atendimento prestado por seus funcionários, que faz da MAXICAIXA referência em utilitários plásticos.</p>
-                    <b>Visão</b>
+                    <h3>Visão</h3>
                     <p>Ser Reconhecida no mercado como uma empresa referência em produtos plásticos e em prestação de serviços de transformação de termoplásticos, comprometida com seus clientes, fornecedores e colaboradores.</p>
-                    <b>Missão</b>
+                    <h3>Missão</h3>
                     <p>Satisfazer as necessidades dos clientes através do fornecimento de produtos e serviços com qualidade, segurança e excelência.</p>
-                    <b>Valores</b>
+                    <h3>Valores</h3>
                     <p>Ética, satisfação do cliente, foco no resultado, trabalho em equipe, excelência nos processos e produtos.</p>
                 
                 </div>

@@ -397,10 +397,13 @@ h4{
     font-size: 13px;
     color: #626262;
 }
-.sobreDireita{
+.sobreDireita p, .sobreDireita h3{
     font-family: Lato;
     font-size: 13px;
     color: #626262;
+}
+.sobreDireita h3{
+    font-weight: bold !important;
 }
 .sustentabilidade{
     padding: 50px 0 50px 0;
@@ -456,7 +459,7 @@ h4{
     font-size: 35px;
     color: #414141;
 }
-.infoHome h5{
+.infoHome h3{
     text-align: center;
     font-family: Roboto Slab;
     font-size: 15px;
@@ -468,7 +471,7 @@ h4{
 .barraTarefas img {
     margin: auto 5%;
 }
-.iconsHome p{
+.iconsHome h2{
     font-family: Roboto Slab;
     font-size: 20px;
     color: #414141;
@@ -519,7 +522,7 @@ h4{
 .infoLProdutos img{
     width: 50%;
 }
-.infoLProdutos h3, .infoLProdutos p{
+.infoLProdutos h2, .infoLProdutos p{
     width: 46%;
     text-align: center !important;
 }
@@ -529,13 +532,13 @@ h4{
     color: #414141;
     text-align: center;
 }
-.lProdutos p, .lProdutos h3, .listagemProdutos p{
+.lProdutos p, .lProdutos h2, .listagemProdutos p{
     font-family: Roboto Slab;
     
     color: #989898;
     text-align: center;
 }
-.lProdutos h3{
+.lProdutos h2{
     font-size: 16px;
 }
 .lProdutos , .listagemProdutos{
