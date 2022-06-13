@@ -73,7 +73,7 @@ nav > ul > li{
 nav ul li ul li{
     padding: 10px 10px 10px 20px !important;
     font-size: 13px;
-    width: 220px;
+    width: 350px;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 nav ul li ul li , nav ul li ul{
@@ -850,7 +850,7 @@ tr{
     }
 }
 
-@media (max-width:1440px){
+@media (max-width:1000px){
     nav ul, .iconeBarra{
         display:inline-block;
     }
@@ -868,7 +868,9 @@ tr{
     nav ul ul{
         z-index: 10000;
     }
+    
     .iconeBarra{
         vertical-align: top;
     }
+    
 }

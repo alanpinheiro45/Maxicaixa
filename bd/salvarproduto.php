@@ -1,6 +1,6 @@
 <?php
     require_once("../repetidores/head.php");
-    
+    var_dump($_POST);
     $diretorio=date("Y-m-d-H-i-s").$_FILES['img_perfil']['name'];
     $diretorio2=date("Y-m-d-H-i-s").$_FILES['img_descricao']['name'];
     $diretorio3=date("Y-m-d-H-i-s").$_FILES['img3']['name'];
@@ -43,8 +43,12 @@
         )");
             
             $lastid = $PDO->lastInsertId();
+            var_dump($lastid);
+
         foreach($_POST["segmentos"] as $item){
-            $PDO->exec("INSET INTO rl_produto_segmentos VALUES(default, '$lastid', '$item')");
+            var_dump($item);
+
+            $PDO->exec("INSERT INTO rl_produto_segmentos VALUES (default, '$lastid', '$item')");
         }
 
     }catch(Exception $e){
