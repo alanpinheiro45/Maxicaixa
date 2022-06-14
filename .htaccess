@@ -1,6 +1,8 @@
 RewriteEngine On
     #aqui criamos uma condição para que os arquivos sejam ignorados nas regras abaixo
 
-    RewriteRule ^segmentos/([A-Za-z0-9/+]+)$ segmentos/index.php?titulo=$1
-    RewriteRule ^categoria-produto/([A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)$ categoria-produto/index.php?titulo=$1
-    RewriteRule ^produto/([A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)$ produto/index.php?titulo=$1
+    RewriteRule ^segmentos/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)/([0-9+])$ segmentos/index.php?titulo=$1&page=$2
+    RewriteRule ^segmentos/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)/$ segmentos/index.php?titulo=$1&page=1
+    RewriteRule ^segmentos/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)$ segmentos/index.php?titulo=$1&page=1
+    RewriteRule ^categoria-produto/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)$ categoria-produto/index.php?titulo=$1
+    RewriteRule ^produto/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ/]*+)$ produto/index.php?titulo=$1

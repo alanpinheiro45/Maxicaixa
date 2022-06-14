@@ -6,7 +6,8 @@
 
 try{
     $rsegmentos=$PDO->query("SELECT * FROM segmentos",PDO::FETCH_ASSOC);
-    $lprodutos=$PDO->query("SELECT * FROM categoria_produto",PDO::FETCH_ASSOC);
+    $lprodutos=$PDO->query("SELECT * FROM categoria_produto ORDER BY ordem ASC;",PDO::FETCH_ASSOC);
+    
 
     if($rsegmentos == false || $lprodutos == false){
         echo("Erro ao consultar os dados");
@@ -19,7 +20,6 @@ try{
 }catch(Exception $e){
     echo("Erro ao consultar os dados".$e->getMessage());
 }
-
 ?>
 
 <div class="bemVindo">
@@ -34,7 +34,6 @@ try{
 <header>
     <div class="barraTarefas">
         <a href="<?=$url?>index.php"><img src="<?=$url?>img/logo-footer-maxicaixa.png"></a>
-
         <nav>
             <ul>
                 <li><a href="<?=$url?>index.php">Home</a></li>

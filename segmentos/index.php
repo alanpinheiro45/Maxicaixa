@@ -4,10 +4,20 @@ require_once("../repetidores/head.php");
 require_once("../repetidores/cabecalho.php");
 require_once("../bd/conexao.php");
 
+$qtd = 12;
+$page = 1; 
+if(isset($_GET["page"])){
+    $page = $_GET["page"];
+}
+
+$n1= ($page - 1) * $qtd;
+$n2= $qtd;
+var_dump($page);
 try{
     $resultadoID=$PDO->query("SELECT * FROM segmentos WHERE segmentos.nome = '$_GET[titulo]'");
     $resultadoID = $resultadoID->fetch();
-    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos, rl_produto_segmentos WHERE produtos.id = rl_produto_segmentos.idProduto AND rl_produto_segmentos.idSegmentos = $resultadoID[id]",PDO::FETCH_ASSOC);
+    $resultados=$PDO->query("SELECT produtos.id, produtos.nome, produtos.img_perfil FROM produtos, rl_produto_segmentos WHERE produtos.id = rl_produto_segmentos.idProduto AND rl_produto_segmentos.idSegmentos = $resultadoID[id] LIMIT $n1 , $n2",PDO::FETCH_ASSOC);
+    $qtdpaginas=$PDO->query('SELECT ceil(count(*)/12) as contador FROM produtos, rl_produto_segmentos WHERE produtos.id = rl_produto_segmentos.idProduto AND rl_produto_segmentos.idSegmentos = '.$resultadoID["id"].'');
 
     if($resultados == false){
         echo("Erro ao consultar os dados");
@@ -15,11 +25,12 @@ try{
     }
 
     $resultados=$resultados->fetchAll();
+    $qtdpaginas=$qtdpaginas->fetch();
 
 }catch(Exception $e){
     echo("Erro ao consultar os dados".$e->getMessage());
 }
-
+var_dump($qtdpaginas);
 ?>
 
  <div class="centralizado listagemProdutos">
@@ -39,6 +50,12 @@ try{
                 </div>
 
                 <?php endforeach; ?>
+            </div>
+
+            <div class="npage">
+            <?php for($i = 1; $i <= $qtdpaginas['contador']; $i++):?>
+                <a href="<?=$url?>segmentos/<?=$_GET['titulo']."/".$i?>"class="linkpagina btn"><?=$i?></a>
+                <?php endfor;?>
             </div>
         </div>
 
