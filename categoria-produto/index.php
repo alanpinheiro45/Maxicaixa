@@ -35,8 +35,8 @@ try{
                     </div>
                     <div class="txtProdutos">
                         <p><?= $item["nome"] ?></p>
-                    </div></a>
-                    <a href="../fale-conosco/index.php"><button>Solicitar um Cotação</button></a>
+                    </div>
+                    <button>SOLICITAR COTAÇÃO</button></a>
                 </div>
 
                 <?php endforeach; ?>

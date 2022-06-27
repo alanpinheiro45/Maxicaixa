@@ -36,49 +36,44 @@ try{
 ?>
 <body>
     <div class="centralizado tprodutos"><h1>Produtos Maxicaixa</h1></div>
-    <div class="segmentoLateral">
-        <ul>
-        <li><h2>Segmentos</h2>
+        <div class="segmentoLateral">
             <ul>
-            <?php foreach($rsegmentos as $item): ?>
-                <li><a href="<?= $url. "segmentos/$item[nome]" ?>">
-                    <button><?= $item["nome"] ?></button> </a>
-                </li>
-                <?php endforeach; ?>
-            </ul>
-        </li>
-            </ul>
-            <ul>
-                <li><h2>Linhas de Produtos</h2>
-                        <ul>
-                            <?php foreach($lprodutos as $item): ?>
-                            <li><a href="<?= $url. "categoria-produto/".urlencode($item['nome']) ?>">
-                                <button><?= $item["nome"] ?></button></a>
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                </li>
-            </ul> 
-    </div>
+            <li><h2>Segmentos</h2>
+                <ul>
+                <?php foreach($rsegmentos as $item): ?>
+                    <li><a href="<?= $url. "segmentos/".urlencode($item["nome"]) ?>">
+                        <?= $item["nome"] ?></a>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+                </ul>
+                <ul>
+                    <li><h2>Linhas de Produtos</h2>
+                            <ul>
+                                <?php foreach($lprodutos as $item): ?>
+                                <li><a href="<?= $url. "categoria-produto/".urlencode($item['nome']) ?>">
+                                    <?= $item["nome"] ?></a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                    </li>
+                </ul> 
+        </div>
           
-    
-    
-
     <div class="centralizado listagemProdutos">
         <div class="row infoProdutos1">
             <?php foreach($resultados as $item): ?>
                 <div class="col-4">
 
-                   <a href="<?=$url?>produto/<?=urlencode($item['nome'])?>">
+                <a href="<?=$url?>produto/<?=urlencode($item['nome'])?>">
                         <div class="imgProdutos">
                             <img src="<?=$item["img_perfil"]?>">
                         </div>
                         <div class="txtProdutos">
                             <p><?= $item["nome"] ?></p>
                         </div>
-                    </a>
-
-                        <a href="../fale-conosco/index.php"><button>Solicitar um Cotação</button></a>
+                    <button>SOLICITAR COTAÇÃO</button></a>
                 </div>
                 <?php endforeach; ?>  
             </div>

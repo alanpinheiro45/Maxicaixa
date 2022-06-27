@@ -22,19 +22,13 @@
     $urlImg6 = (!empty($_FILES["img6"]["name"])) ? "{$url}img/imgproduto/{$diretorio6}" : "";
 
     try{
-        $contador=$PDO->exec("INSERT INTO produtos VALUES (
+        $contador=$PDO->exec("INSERT INTO produtos(id, id_categoria, nome, descricao, descricao2, img_perfil, img_descricao, img3, img4, img5, img6) VALUES (
         default,
         '$_POST[select]',
         '$_POST[nome]',
-        '$_POST[peso]',
-        '$_POST[capacidade_volume]',
         '$_POST[descricao]',
-        '$_POST[material]',
-        '$_POST[dimensoes_externas]',
-        '$_POST[dimensoes_internas]',
+        '$_POST[descricao2]',
         '$urlImgPerfil',
-        '$_POST[carga_dinamica]',
-        '$_POST[carga_estatica]',
         '$urlImgDesc',
         '$urlImg3',
         '$urlImg4',

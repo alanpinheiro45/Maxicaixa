@@ -51,7 +51,7 @@ try{
                 <li>Segmentos
                     <ul>
                     <?php foreach($rsegmentos as $item): ?>
-                        <li><a href="<?= $url. "segmentos/$item[nome]" ?>">
+                        <li><a href="<?= $url. "segmentos/".urlencode($item['nome']) ?>">
                             <?= $item["nome"] ?> </a>
                         </li>
                         <?php endforeach; ?>

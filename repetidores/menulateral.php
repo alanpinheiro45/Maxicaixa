@@ -1,52 +1,23 @@
-<?php 
- require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/repetidores/head.php");
- require_once("{$_SERVER["DOCUMENT_ROOT"]}/Maxicaixa/bd/conexao.php");
+<h1 style="text-align: center"><span style="font-family: Arial;font-size: 18px">Caixa Plástica Fechada 02</span></h1>
 
-try{
-    $rsegmentos=$PDO->query("SELECT * FROM segmentos",PDO::FETCH_ASSOC);
-    $lprodutos=$PDO->query("SELECT * FROM categoria_produto",PDO::FETCH_ASSOC);
+<h3><span style="font-family: Arial;font-size: 18px">Linha 1000 Organizadora</span></h3>
 
-    if($rsegmentos == false || $lprodutos == false){
-        echo("Erro ao consultar os dados");
-        exit();
-    }
+<h3><span style="font-family: Arial;font-size: 16px">Informações Técnicas</span></h3>
 
-    $rsegmentos=$rsegmentos->fetchAll();
-    $lprodutos=$lprodutos->fetchAll();
+<h3><span style="font-family: Arial;font-size: 16px">Capacidade: 2 litros<br>
+Carga Suportada: 2,0 Kg<br>
+Peso: 0,230 Kg<br>
+Dimensões Internas: 150 x 150 x 105 mm<br>
+Dimensões Externas: 165 x 165 x 110 mm<br>
+Cores Disponíveis: Preto e Azul. Consulte para mais cores.</span></h3>
 
-}catch(Exception $e){
-    echo("Erro ao consultar os dados".$e->getMessage());
-}
+<h3><span style="font-family: Arial;font-size: 16px">Composição de resina: Polipropileno - PP</span></h3>
 
-?>
+<h3><span style="font-family: Arial;font-size: 16px"><br>
+Conheça a Maxicaixa.</span></h3>
 
-<div id="wrapper">
-   <!-- Sidebar -->
-   <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="../sobre-nos/index.php">Sobre nós</a></li>
-                <li><a href="../produtos/index.php">Produtos</a>
-                    <ul>
-                        <?php foreach($lprodutos as $item): ?>
-                        <li><a href="<?= "../categoria-produto/index.php?id=$item[id]" ?>">
-                            <?= $item["nome"] ?> </a>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </li>
-                <li><a>Segmentos</a>
-                    <ul>
-                    <?php foreach($rsegmentos as $item): ?>
-                        <li><a href="<?= "../segmentos/index.php?id=$item[id]" ?>">
-                            <?= $item["nome"] ?> </a>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </li> 
-                <li><a href="../blog/blog.php">Blog</a></li> 
-                <li><a href="../fale-conosco/index.php">Faça um Orçamento</a></li> 
-                <li><a href="../upload/catalogo-pdf.pdf" target="_blank">Catálogo Digital</a></li>       
-      </ul>
-   </div>
-   <!-- /#sidebar-wrapper -->
+<div class="se-component se-video-container __se__float-none" contenteditable="false">
+  <figure style="height: 298px; padding-bottom: 298px; width: 530px;">
+    <iframe src="https://www.youtube.com/embed/BsCvrw6mckc" data-proportion="true" data-size="530px,298px" data-align="none" data-file-name="BsCvrw6mckc" data-file-size="0" data-origin="100%,56.25%" style="width: 530px; height: 298px;" data-index="0"></iframe>
+  </figure>
+</div>

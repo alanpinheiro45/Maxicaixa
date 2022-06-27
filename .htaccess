@@ -6,3 +6,4 @@ RewriteEngine On
     RewriteRule ^segmentos/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)$ segmentos/index.php?titulo=$1&page=1
     RewriteRule ^categoria-produto/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ]+)$ categoria-produto/index.php?titulo=$1
     RewriteRule ^produto/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ/]*+)$ produto/index.php?titulo=$1
+    RewriteRule ^updateproduto/([-A-Za-z0-9/+/ÁÉÍÓÚáéíóúÂÊÔâêôÀàÜüÇçÑñÃÕãõ/]*+)$ usuario/updateproduto.php?titulo=$1

@@ -32,6 +32,8 @@
                         <li>Avícola</li>
                         <li>Farmacêutica</li>
                         <li>Industrial</li>
+                        <li>Pescados</li>
+                        <li>Centros Logisticos e Distribuição</li>
                     </ul>
                     <div class="verCatalogo">
                     <a href="<?=$url?>/upload/catalogo-pdf.pdf" target="_blank"><p>Ver Catálogo Maxicaixa>></p></a>

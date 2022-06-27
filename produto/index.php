@@ -28,10 +28,34 @@ catch(Exception $e){
 }?>
 
 <title>Produto • Maxicaixa</title>
+<div class="segmentoLateral">
+            <ul>
+            <li><h2>Segmentos</h2>
+                <ul>
+                <?php foreach($rsegmentos as $item): ?>
+                    <li><a href="<?= $url. "segmentos/".urlencode($item["nome"]) ?>">
+                        <?= $item["nome"] ?></a>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+                </ul>
+                <ul>
+                    <li><h2>Linhas de Produtos</h2>
+                            <ul>
+                                <?php foreach($lprodutos as $item): ?>
+                                <li><a href="<?= $url. "categoria-produto/".urlencode($item['nome']) ?>">
+                                    <?= $item["nome"] ?></a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                    </li>
+                </ul> 
+        </div>
 <div class="bgproduto">
     <div class="centralizado">
         <div class="row">
-            <div class="col">
+            <div class="col" style="padding-right: 50px;">
 
                 <div class="row">
                                       
@@ -143,70 +167,15 @@ catch(Exception $e){
 
             </div>
             <div class="col">
-                <h1><?=$produto["nome"]?></h1>
-                <div class="descricaopd">
-                    <div class="tabeladescricao">
-                        <table class="table">
-                            
-                            <tr>
-                                <?php if(!empty($produto["peso"])): ?>
-                                    <th><h3>Peso</h3></th>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["dimensoes_externas"])): ?>
-                                    <th><h3>Dimensões Externas</h3></th>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["material"])): ?>
-                                    <th><h3>Material</h3></th>
-                                <?php endif; ?>    
-                                <?php if(!empty($produto["dimensoes_internas"])): ?>
-                                    <th><h3>Dimensões Internas</h3></th>
-                                <?php endif; ?>    
-                            </tr>
-                            <tr>
-                                <?php if(!empty($produto["peso"])): ?>
-                                    <td><?= $produto["peso"] ?></td>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["dimensoes_externas"])): ?>
-                                    <td><?= $produto["dimensoes_externas"] ?></td> 
-                                <?php endif; ?>
-                                <?php if(!empty($produto["material"])): ?>
-                                    <td><?= $produto["material"] ?></td>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["dimensoes_internas"])): ?>
-                                    <td><?= $produto["dimensoes_internas"] ?></td>
-                                <?php endif; ?>     
-                            </tr>    
-                            <tr>
-                                <?php if(!empty($produto["capacidade_volume"])): ?>
-                                    <th><h3>Capacidade / Volume</h3></th>
-                                <?php endif;?>
-                                <?php if(!empty($produto["carga_dinamica"])): ?>
-                                    <th><h3>Carga Dinâmica</h3></th>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["carga_estatica"])): ?>
-                                    <th><h3>Carga Estática</h3></th>
-                                <?php endif; ?>
-                            </tr>
-                            <tr>
-                                <?php if(!empty($produto["capacidade_volume"])): ?>
-                                    <td><?= $produto["capacidade_volume"] ?></td>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["carga_dinamica"])): ?>
-                                    <td><?= $produto["carga_dinamica"] ?></td>
-                                <?php endif; ?>
-                                <?php if(!empty($produto["carga_estatica"])): ?>
-                                    <td><?= $produto["carga_estatica"] ?></td>
-                                <?php endif; ?> 
-                            </tr>    
-                        </table>
-                    </div>
-                    <details open>
-                        <summary>Descrição</summary>
+                <h1 class="nomeProduto"><?=$produto["nome"]?></h1>
+                <div>
                         <p><?=$produto["descricao"];?></p>
-                    </details>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col centralizdo descricao2">
+            <p><?=$produto["descricao2"];?></p>
     </div>
 </div>
 

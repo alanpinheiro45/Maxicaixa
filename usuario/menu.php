@@ -8,6 +8,7 @@
         <h1>Menu</h1>
 
     <a href="<?=$url?>usuario/cadastroprodutos.php"> Cadastrar Novo Produto </a><br>
+    <a href="<?=$url?>usuario/preupdate.php"> Editar Produto </a><br>
     <a href="<?=$url?>blog/sunlite.php"> Nova Postagem para o Blog </a>
 
 </div>
